@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Univers LT CYR";
-  src: url("/fonts/UniversLTCYR55Roman/font.woff") format("woff");
+  src: url("fonts/UniversLTCYR55Roman/font.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
