@@ -1,0 +1,529 @@
+@font-face{
+
+   font-family: 'Univers LT CYR';
+   
+   src: url('/fonts/UniversLTCYR55Roman/font.woff') format('woff');
+   
+   font-weight: normal;
+   
+   font-style: normal;
+   
+}
+
+$current_color: #3548FE;
+$white_color: #fff;
+$super_large_size: 4rem;
+$small_size: 14px;
+$mt120: 120px;
+
+
+* {
+   font-family: 'Univers LT CYR';
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   letter-spacing: -0.03em;
+   line-height: 24px;
+}
+
+html {
+   font-size: 20px;
+}
+
+body {
+   background-color: #000;
+   padding: 20px 0;
+   color: $white_color;
+}
+
+h2 {
+   font-size: 75px;
+   font-weight: 400;
+   line-height: 60px;
+}
+
+a {
+   color: $current_color;
+
+   &:hover {
+      text-decoration: none;
+   }
+}
+
+img {
+   width: 100%;
+   max-width: 100%;
+}
+
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.header {
+   display: grid;
+    grid-template-columns: 20% 75%;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_navigation {
+      display: flex;
+      align-items: center;
+
+      .menu_list {
+         display: flex;
+         justify-content: space-evenly;
+         width: 100%;
+         list-style: none;
+
+         .menu_list_item {
+            
+            a {
+               font-size: $small_size;
+            color: $white_color;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-image: linear-gradient($white_color, $white_color);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+
+            &:hover {
+               background-size: 100% 1px;
+            }
+
+            }
+
+         }
+      }
+
+      #apply_btn {
+         background-color: $current_color;
+    font-size: $small_size;
+    max-width: 170px;
+    width: 100%;
+    border: 2px solid $current_color;
+    border-radius: 50px;
+    padding: 9px 0;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all .4s;
+
+         &:hover {
+            background-color: transparent;
+            cursor: pointer;
+         }
+
+      }
+      
+    }
+}
+
+.breadcrumbs {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+   grid-gap: 30px;
+   margin-top: 80px;
+
+   .breadcrumb_link {
+      font-size: $small_size;
+   } 
+}
+
+.title {
+   font-size: $super_large_size;
+   margin-top: 50px;
+   position: relative;
+
+   h1 {
+      font-weight: 400;
+      line-height: 120px;
+   }
+
+   & span {
+      color: $current_color;
+   }
+
+   #module_level {
+      position: absolute;
+    color: #23232E;
+    right: 90px;
+    bottom: -75px;
+    font-size: 7em;
+    z-index: -1;
+    height: 100%;
+   }
+
+}
+
+#go_to_professium {
+   background-color: $current_color;
+    font-size: $small_size;
+    margin-top: 50px;
+    max-width: 257px;
+    width: 100%;
+    border: 2px solid $current_color;
+    border-radius: 50px;
+    padding: 10px 0;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all .4s;
+
+         &:hover {
+            background-color: transparent;
+            cursor: pointer;
+         }
+}
+
+#modules {
+   margin-top: 100px;
+   
+
+.amount_modules {
+   font-size: 30px;
+    display: flex;
+    align-items: center;
+
+    .amount_modules_info {
+      margin-left: 10px;
+      width: auto;
+    }
+
+}
+.modules_list {
+   margin-top: 50px;
+    display: flex;
+    overflow-x: auto;
+
+    .modules_list_item {
+      min-width: 345px;
+      height: 340px;
+      background-color: #23232E;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      justify-content: space-between;
+
+      a {
+         text-decoration: none;
+      }
+
+      .modules_list_item_title {
+         font-size: 40px;
+         line-height: 36px;
+      }
+
+      .modules_list_item_time {
+         max-width: 190px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+         .months {
+            text-align: right;
+            position: relative;
+
+            &::before {
+               content: "";
+    width: 35px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(
+130deg
+) translate(50px, -5px);
+
+         }
+      }
+
+    }
+
+    &:last-child {
+       margin-right: 0;
+    }
+}
+}
+
+.mastery_vector {
+   margin-top: $mt120;
+
+   .mastery_vector_link {
+      display: block;
+      margin-top: 50px;
+   }
+}
+
+}
+
+#professium_details {
+   margin-top: $mt120;
+
+   .advantages {
+      background: $current_color;
+      padding-bottom: 50px;
+
+   .advantages_title {
+      color: #101014;
+      margin-top: -65px;
+      max-width: 940px;
+
+      span {
+         color: $current_color;
+      }
+   }
+
+.advantages_list {
+   margin-top: $mt120;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+    .advantages_list_item_title {
+      padding-bottom: 40px;
+      border-bottom: 1px solid #fff;
+      font-size: 2rem;
+    }
+
+    .advantages_list_item_text {
+      padding-top: 30px;
+    }
+}
+
+}
+
+
+}
+
+#curators {
+
+   padding: 80px 0;
+
+   .curators_title {
+
+
+      span {
+         color: $current_color;
+      }
+   }
+
+   .curators_list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: auto hidden;
+      margin-top: 50px;
+      padding-bottom: 30px;
+
+      .curators_item {
+         display: flex;
+         flex-direction: column;
+         min-width: 290px;
+         margin-right: 20px;
+         height: 100%;
+
+         &:last-child {
+            margin-right: 0;
+         }
+
+         .curators_item_position {
+            color: $current_color;
+            font-size: $small_size;
+            text-transform: uppercase;
+            margin: 30px 0;
+         }
+
+         .curators_item_name {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+         }
+
+         .curators_item_about {
+            font-size: 16px;
+            line-height: 19px;
+         }
+      }
+   }
+
+}
+
+#curriculum {
+
+   padding: 80px 0;
+
+   .curriculum_title {
+
+
+      span {
+         color: $current_color;
+      }
+   }
+
+   .curriculum_list {
+      margin: 60px 0 50px;
+
+      .curriculum_item {
+         display: flex;
+         justify-content: space-evenly;
+
+         .curriculum_item_module {
+            margin: 60px 0 0;
+    position: relative;
+    min-width: 120px;
+    text-align: center;
+
+            &::after {
+               content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #23232E;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 45px);
+
+            }
+
+         }
+
+         .curriculum_item_description {
+            max-width: 1030px;
+            width: 100%;
+            background: #23232E;
+            padding: 60px;
+            margin-bottom: 20px;
+
+            .curriculum_item_description_title {
+               margin-bottom: 50px;
+            }
+
+            .curriculum_item_description_text {
+               display: grid;
+    grid-template-columns: 55% 35%;
+    grid-gap: 10%;
+    
+               .curriculum_item_description_text_item {
+                  margin-bottom: 50px;
+
+                  &:last-child {
+                     margin-bottom: 0;
+                  }
+               }
+
+               .curriculum_item_description_subtitle {
+                  font-size: $small_size;
+                  text-transform: uppercase;
+                  color: $current_color;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.15em;
+               }
+ 
+               .pass_separetely {
+                  text-transform: uppercase;
+                  font-size: $small_size;
+                  max-width: 257px;
+                  height: 45px;
+                  width: 100%;
+                  background: transparent;
+                  border: 1px solid #fff;
+                  border-radius: 50px;
+                  color: $white_color;
+                  transition: all .4s;
+
+                  &:hover {
+                     background: $current_color;
+                     cursor: pointer;
+                  }
+               }
+            }
+         }
+
+      }
+
+      .curriculum_item_diploma {
+         display: flex;
+         justify-content: space-evenly;
+
+         .curriculum_item_module {
+            margin: 60px 0 0;
+    position: relative;
+    min-width: 120px;
+    text-align: center;
+
+         }
+
+         .curriculum_item_diploma_description {
+            background: $current_color;
+            max-width: 1030px;
+            width: 100%;
+            padding: 60px;
+            margin-bottom: 20px;
+
+            .curriculum_item_diploma_description_header {
+               display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+               .curriculum_item_diploma_description_title {
+                  margin-bottom: 50px;
+
+                  span {
+                     color: #101014;
+                  }
+               }
+            }
+
+            .curriculum_item_diploma_description_text {
+
+
+               .curriculum_item_description_text_item {
+                  margin-bottom: 50px;
+
+                  &:last-child {
+                     margin-bottom: 0;
+                  }
+
+                  .curriculum_item_description_subtitle {
+                     font-size: $small_size;
+                  text-transform: uppercase;
+                  color: #101014;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.15em;
+                  }
+               }
+
+               .curriculum_item_description_text_with_autograph {
+                  display: flex;
+                  justify-content: space-between;
+
+                  .curriculum_item_description_text_with_autograph_image {
+                     max-width: 325px;
+                  }
+               }
+
+            }
+         }
+
+      }
+
+   }
+
+}
+
+
+.curators_list, .modules_list {
+
+   &::-webkit-scrollbar {
+      height: 2px;
+      background-color: #23232E;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: $current_color;
+   }
+}
