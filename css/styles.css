@@ -42,6 +42,14 @@ img {
   max-width: 100%;
 }
 
+.none_list {
+  list-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -128,7 +136,6 @@ img {
 }
 .header .header_navigation #apply_btn:hover {
   background-color: transparent;
-  cursor: pointer;
 }
 
 .breadcrumbs {
@@ -184,7 +191,6 @@ img {
 }
 #go_to_professium:hover {
   background-color: transparent;
-  cursor: pointer;
 }
 
 #modules {
@@ -332,54 +338,6 @@ img {
 #curators .curators_title span {
   color: #3548FE;
 }
-#curators .curators_list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  overflow: auto hidden;
-  margin-top: 50px;
-  padding-bottom: 30px;
-}
-#curators .curators_list .curators_item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 290px;
-  margin-right: 20px;
-  height: 100%;
-}
-#curators .curators_list .curators_item:last-child {
-  margin-right: 0;
-}
-#curators .curators_list .curators_item .curators_item_position {
-  color: #3548FE;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 30px 0;
-}
-#curators .curators_list .curators_item .curators_item_name {
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-#curators .curators_list .curators_item .curators_item_about {
-  font-size: 16px;
-  line-height: 19px;
-}
 
 #curriculum {
   padding: 80px 0;
@@ -388,7 +346,7 @@ img {
   color: #3548FE;
 }
 #curriculum .curriculum_list {
-  margin: 60px 0 50px;
+  margin: 60px 0 0;
 }
 #curriculum .curriculum_list .curriculum_item {
   display: -webkit-box;
@@ -467,10 +425,10 @@ img {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  letter-spacing: 1.5px;
 }
 #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely:hover {
   background: #3548FE;
-  cursor: pointer;
 }
 #curriculum .curriculum_list .curriculum_item_diploma {
   display: -webkit-box;
@@ -490,14 +448,16 @@ img {
   min-width: 120px;
   text-align: center;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description {
-  background: #3548FE;
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container {
   max-width: 1030px;
   width: 100%;
+}
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description {
+  background: #3548FE;
   padding: 60px;
   margin-bottom: 20px;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_header {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -512,26 +472,26 @@ img {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
   margin-bottom: 50px;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title span {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title span {
   color: #101014;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item {
   margin-bottom: 50px;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item:last-child {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item:last-child {
   margin-bottom: 0;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item .curriculum_item_description_subtitle {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item .curriculum_item_description_subtitle {
   font-size: 14px;
   text-transform: uppercase;
   color: #101014;
   margin-bottom: 10px;
   letter-spacing: 0.15em;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -543,14 +503,200 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph .curriculum_item_description_text_with_autograph_image {
+#curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph .curriculum_item_description_text_with_autograph_image {
   max-width: 325px;
 }
+#curriculum .curriculum_list .curriculum_item_attention {
+  max-width: 525px;
+}
+#curriculum .curriculum_list .curriculum_item_join {
+  background-color: #3548FE;
+  border: 2px solid #3548FE;
+  height: 45px;
+  max-width: 125px;
+  width: 100%;
+  margin-top: 30px;
+  text-transform: uppercase;
+  -moz-border-radius: 50px;
+       border-radius: 50px;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  letter-spacing: 1.5px;
+}
+#curriculum .curriculum_list .curriculum_item_join:hover {
+  background-color: transparent;
+}
 
-.curators_list::-webkit-scrollbar, .modules_list::-webkit-scrollbar {
+#students_projects {
+  padding: 80px 0;
+}
+#students_projects .students_projects_title span {
+  color: #3548FE;
+}
+
+#suitable_program {
+  padding-top: 80px;
+}
+#suitable_program .suitable_program_title span {
+  color: #3548FE;
+}
+#suitable_program .suitable_program_list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  margin-top: 60px;
+}
+#suitable_program .suitable_program_list .suitable_program_list_part {
+  max-width: 500px;
+}
+#suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item {
+  margin-bottom: 50px;
+}
+#suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item .suitable_program_list_point {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item .suitable_program_list_point span {
+  color: #3548FE;
+  min-width: 35px;
+}
+#suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item .suitable_program_list_item_title {
+  color: #3548FE;
+  margin-bottom: 10px;
+}
+#suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item:last-child {
+  margin-bottom: 0;
+}
+#suitable_program .consult_me_btn {
+  background-color: #3548FE;
+  border: 2px solid #3548FE;
+  height: 45px;
+  max-width: 255px;
+  width: 100%;
+  text-transform: uppercase;
+  -moz-border-radius: 50px;
+       border-radius: 50px;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  letter-spacing: 1.5px;
+}
+#suitable_program .consult_me_btn:hover {
+  background-color: transparent;
+}
+
+#saving {
+  margin-top: 120px;
+}
+#saving .saving_container {
+  background-color: #3548FE;
+  padding-bottom: 100px;
+}
+#saving .saving_container .saving_title {
+  color: #101014;
+  margin-top: -65px;
+  max-width: 940px;
+}
+#saving .saving_container .saving_title span {
+  color: #3548FE;
+}
+#saving .saving_container .saving_list {
+  margin-top: 120px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+}
+#saving .saving_container .saving_list .saving_item {
+  max-width: 500px;
+}
+#saving .saving_container .saving_list .saving_item .go-to-professium {
+  background-color: #101014;
+  font-size: 14px;
+  margin-top: 30px;
+  max-width: 257px;
+  width: 100%;
+  border: none;
+  -moz-border-radius: 50px;
+       border-radius: 50px;
+  padding: 10px 0;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+#saving .saving_container .saving_list .saving_item .saving_item_amount {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+.curators_list, .students_projects_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  overflow: auto hidden;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+.curators_list .curators_item, .curators_list .students_projects_item, .students_projects_list .curators_item, .students_projects_list .students_projects_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 290px;
+  min-width: 290px;
+  margin-right: 20px;
+  height: 100%;
+}
+.curators_list .curators_item:last-child, .curators_list .students_projects_item:last-child, .students_projects_list .curators_item:last-child, .students_projects_list .students_projects_item:last-child {
+  margin-right: 0;
+}
+.curators_list .curators_item .curators_item_image, .curators_list .curators_item .students_projects_image, .curators_list .students_projects_item .curators_item_image, .curators_list .students_projects_item .students_projects_image, .students_projects_list .curators_item .curators_item_image, .students_projects_list .curators_item .students_projects_image, .students_projects_list .students_projects_item .curators_item_image, .students_projects_list .students_projects_item .students_projects_image {
+  height: 440px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.curators_list .curators_item .curators_item_position, .curators_list .curators_item .students_projects_item_position, .curators_list .students_projects_item .curators_item_position, .curators_list .students_projects_item .students_projects_item_position, .students_projects_list .curators_item .curators_item_position, .students_projects_list .curators_item .students_projects_item_position, .students_projects_list .students_projects_item .curators_item_position, .students_projects_list .students_projects_item .students_projects_item_position {
+  color: #3548FE;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+.curators_list .curators_item .curators_item_name, .curators_list .curators_item .students_projects_item_name, .curators_list .students_projects_item .curators_item_name, .curators_list .students_projects_item .students_projects_item_name, .students_projects_list .curators_item .curators_item_name, .students_projects_list .curators_item .students_projects_item_name, .students_projects_list .students_projects_item .curators_item_name, .students_projects_list .students_projects_item .students_projects_item_name {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.curators_list .curators_item .curators_item_about, .curators_list .curators_item .students_projects_item_about, .curators_list .students_projects_item .curators_item_about, .curators_list .students_projects_item .students_projects_item_about, .students_projects_list .curators_item .curators_item_about, .students_projects_list .curators_item .students_projects_item_about, .students_projects_list .students_projects_item .curators_item_about, .students_projects_list .students_projects_item .students_projects_item_about {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.curators_list::-webkit-scrollbar, .modules_list::-webkit-scrollbar, .students_projects_list::-webkit-scrollbar {
   height: 2px;
   background-color: #23232E;
 }
-.curators_list::-webkit-scrollbar-thumb, .modules_list::-webkit-scrollbar-thumb {
+.curators_list::-webkit-scrollbar-thumb, .modules_list::-webkit-scrollbar-thumb, .students_projects_list::-webkit-scrollbar-thumb {
   background-color: #3548FE;
 }

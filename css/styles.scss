@@ -55,6 +55,17 @@ img {
    max-width: 100%;
 }
 
+.none_list {
+   list-style: none;
+}
+
+button {
+
+   &:hover {
+      cursor: pointer;
+   }
+}
+
 
 .container {
    max-width: 1440px;
@@ -114,7 +125,6 @@ img {
 
          &:hover {
             background-color: transparent;
-            cursor: pointer;
          }
 
       }
@@ -160,7 +170,7 @@ img {
 }
 
 #go_to_professium {
-   background-color: $current_color;
+    background-color: $current_color;
     font-size: $small_size;
     margin-top: 50px;
     max-width: 257px;
@@ -175,7 +185,6 @@ img {
 
          &:hover {
             background-color: transparent;
-            cursor: pointer;
          }
 }
 
@@ -312,44 +321,6 @@ img {
       }
    }
 
-   .curators_list {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow: auto hidden;
-      margin-top: 50px;
-      padding-bottom: 30px;
-
-      .curators_item {
-         display: flex;
-         flex-direction: column;
-         min-width: 290px;
-         margin-right: 20px;
-         height: 100%;
-
-         &:last-child {
-            margin-right: 0;
-         }
-
-         .curators_item_position {
-            color: $current_color;
-            font-size: $small_size;
-            text-transform: uppercase;
-            margin: 30px 0;
-         }
-
-         .curators_item_name {
-            font-size: 30px;
-            line-height: 30px;
-            margin-bottom: 10px;
-         }
-
-         .curators_item_about {
-            font-size: 16px;
-            line-height: 19px;
-         }
-      }
-   }
-
 }
 
 #curriculum {
@@ -365,7 +336,7 @@ img {
    }
 
    .curriculum_list {
-      margin: 60px 0 50px;
+      margin: 60px 0 0;
 
       .curriculum_item {
          display: flex;
@@ -434,10 +405,10 @@ img {
                   border-radius: 50px;
                   color: $white_color;
                   transition: all .4s;
+                  letter-spacing: 1.5px;
 
                   &:hover {
                      background: $current_color;
-                     cursor: pointer;
                   }
                }
             }
@@ -450,63 +421,90 @@ img {
          justify-content: space-evenly;
 
          .curriculum_item_module {
-            margin: 60px 0 0;
+            margin: 60px 0 0; 
     position: relative;
     min-width: 120px;
     text-align: center;
 
          }
 
-         .curriculum_item_diploma_description {
-            background: $current_color;
+         .curriculum_item_diploma_container {
             max-width: 1030px;
-            width: 100%;
-            padding: 60px;
-            margin-bottom: 20px;
+               width: 100%;
 
-            .curriculum_item_diploma_description_header {
-               display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-               .curriculum_item_diploma_description_title {
-                  margin-bottom: 50px;
-
-                  span {
-                     color: #101014;
-                  }
-               }
-            }
-
-            .curriculum_item_diploma_description_text {
-
-
-               .curriculum_item_description_text_item {
-                  margin-bottom: 50px;
-
-                  &:last-child {
-                     margin-bottom: 0;
-                  }
-
-                  .curriculum_item_description_subtitle {
-                     font-size: $small_size;
-                  text-transform: uppercase;
-                  color: #101014;
-                  margin-bottom: 10px;
-                  letter-spacing: 0.15em;
-                  }
-               }
-
-               .curriculum_item_description_text_with_autograph {
+            .curriculum_item_diploma_description {
+               background: $current_color;
+               padding: 60px;
+               margin-bottom: 20px;
+   
+               .curriculum_item_diploma_description_header {
                   display: flex;
-                  justify-content: space-between;
-
-                  .curriculum_item_description_text_with_autograph_image {
-                     max-width: 325px;
+       justify-content: space-between;
+       flex-wrap: wrap;
+   
+                  .curriculum_item_diploma_description_title {
+                     margin-bottom: 50px;
+   
+                     span {
+                        color: #101014;
+                     }
                   }
                }
-
+   
+               .curriculum_item_diploma_description_text {
+   
+   
+                  .curriculum_item_description_text_item {
+                     margin-bottom: 50px;
+   
+                     &:last-child {
+                        margin-bottom: 0;
+                     }
+   
+                     .curriculum_item_description_subtitle {
+                        font-size: $small_size;
+                     text-transform: uppercase;
+                     color: #101014;
+                     margin-bottom: 10px;
+                     letter-spacing: 0.15em;
+                     }
+                  }
+   
+                  .curriculum_item_description_text_with_autograph {
+                     display: flex;
+                     justify-content: space-between;
+   
+                     .curriculum_item_description_text_with_autograph_image {
+                        max-width: 325px;
+                     }
+                  }
+   
+               }
             }
+
+         }
+
+      }
+
+      .curriculum_item_attention {
+         max-width: 525px;
+      }
+
+      .curriculum_item_join {
+         background-color: $current_color;
+         border: 2px solid $current_color;
+         height: 45px;
+         max-width: 125px;
+         width: 100%;
+         margin-top: 30px;
+         text-transform: uppercase;
+         border-radius: 50px;
+         color: $white_color;
+         transition: all .4s;
+         letter-spacing: 1.5px;
+
+         &:hover {
+            background-color: transparent;
          }
 
       }
@@ -515,8 +513,185 @@ img {
 
 }
 
+#students_projects {
+padding: 80px 0;
 
-.curators_list, .modules_list {
+   .students_projects_title {
+
+
+      span {
+         color: $current_color;
+      }
+   }
+}
+
+#suitable_program {
+   padding-top: 80px;
+   
+      .suitable_program_title {
+   
+   
+         span {
+            color: $current_color;
+         }
+      }
+
+      .suitable_program_list {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         grid-gap: 50px;
+         margin-top: 60px;
+
+         .suitable_program_list_part {
+            max-width: 500px;
+
+            .suitable_program_list_item {
+
+               margin-bottom: 50px;
+   
+               .suitable_program_list_point {
+                  display: flex;
+   
+                  span {
+                     color: $current_color;
+                     min-width: 35px;
+                  }
+      
+               }
+      
+               .suitable_program_list_item_title {
+                  
+                  color: $current_color;
+                  margin-bottom: 10px;
+               }
+   
+               &:last-child {
+                  margin-bottom: 0;
+               }
+   
+            }
+         }
+         
+      }
+
+      .consult_me_btn {
+         background-color: $current_color;
+         border: 2px solid $current_color;
+         height: 45px;
+         max-width: 255px;
+         width: 100%;
+         text-transform: uppercase;
+         border-radius: 50px;
+         color: $white_color;
+         transition: all .4s;
+         letter-spacing: 1.5px;
+
+         &:hover {
+            background-color: transparent;
+         }
+      }
+   }
+
+#saving {
+   margin-top: 120px;
+
+   .saving_container {
+      background-color: $current_color;
+    padding-bottom: 100px;
+
+    .saving_title {
+      color: #101014;
+      margin-top: -65px;
+      max-width: 940px;
+
+      span {
+         color: $current_color;
+      }
+   }
+
+   .saving_list {
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 50px;
+
+      .saving_item {
+         max-width: 500px;
+
+         .go-to-professium {
+            background-color: #101014;
+    font-size: $small_size;
+    margin-top: 30px;
+    max-width: 257px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 0;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+         }
+
+         .saving_item_amount {
+            font-size: 80px;
+            margin-bottom: 50px;
+         }
+      }
+   }
+
+}
+
+}
+
+
+
+
+.curators_list, .students_projects_list {
+   display: flex;
+   flex-wrap: nowrap;
+   overflow: auto hidden;
+   margin-top: 50px;
+   padding-bottom: 30px;
+
+   .curators_item, .students_projects_item {
+      display: flex;
+      flex-direction: column;
+      width: 290px;
+      min-width: 290px;
+      margin-right: 20px;
+      height: 100%;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      .curators_item_image, .students_projects_image {
+         height: 440px;
+         object-fit: cover;
+      }
+
+      .curators_item_position, .students_projects_item_position {
+         color: $current_color;
+         font-size: $small_size;
+         text-transform: uppercase;
+         margin: 30px 0;
+      }
+
+      .curators_item_name, .students_projects_item_name {
+         font-size: 30px;
+         line-height: 30px;
+         margin-bottom: 10px;
+      }
+
+      .curators_item_about, .students_projects_item_about {
+         font-size: 16px;
+         line-height: 19px;
+      }
+   }
+}
+
+
+.curators_list, .modules_list, .students_projects_list {
 
    &::-webkit-scrollbar {
       height: 2px;
