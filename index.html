@@ -22,13 +22,20 @@
 
                <a href="/">
 
-                  <img src="images/logo.svg" alt="">
+                  <img src="images/logo.svg" alt="logo" width="261" height="32">
 
                </a>
 
             </div>
 
             <nav class="header_navigation">
+
+               <div class="burger">
+
+                  <div class="burger_row1"></div>
+                  <div class="burger_row2"></div>
+
+               </div>
 
                <ul class="menu_list">
                   <li class="menu_list_item"><a href="#">Факультети</a></li>
@@ -53,15 +60,15 @@
 
          </div>
 
-         <div class="title">
+         <div class="header_title mt50">
 
             <h1><span>Visual Communications.</span><br>Professium</h1>
 
-            <p id="module_level">A</p>
+            <!--p id="module_level">A</p-->
 
          </div>
 
-         <button id="go_to_professium">Вступити на професіум</button>
+         <a href="#registration"><button class="go_to_professium">Вступити на професіум</button></a>
 
       </div>
 
@@ -75,15 +82,15 @@
 
             <p>4 модулі. A level</p>
 
-            <a href="#"><img src="images/Info.svg" alt="" class="amount_modules_info"></a>
+            <a href="#"><img src="images/Info.svg" alt="info" width="25" height="25" class="amount_modules_info"></a>
 
          </div>
 
-         <div class="modules_list">
+         <div class="modules_list mt50">
 
             <div class="modules_list_item">
 
-               <a href="#">
+               <a href="#module1">
                   <p class="modules_list_item_title">IT Project Management</p>
                </a>
 
@@ -98,7 +105,7 @@
 
             <div class="modules_list_item">
 
-               <a href="#">
+               <a href="#module2">
                   <p class="modules_list_item_title">IT Project Management</p>
                </a>
 
@@ -113,7 +120,7 @@
 
             <div class="modules_list_item">
 
-               <a href="#">
+               <a href="#module3">
                   <p class="modules_list_item_title">IT Project Management</p>
                </a>
 
@@ -128,7 +135,7 @@
 
             <div class="modules_list_item">
 
-               <a href="#">
+               <a href="#module4">
                   <p class="modules_list_item_title">IT Project Management</p>
                </a>
 
@@ -147,7 +154,7 @@
 
             <h2>Вектор по опануванню професії Product Manager від 0 до першої роботи.</h2>
 
-            <a href="#" class="mastery_vector_link">Чим займається Product Manager?</a>
+            <a href="#" target="_blank" class="mastery_vector_link mt50">Чим займається Product Manager?</a>
 
          </div>
 
@@ -157,7 +164,8 @@
 
    <section id="professium_details">
 
-      <img src="images/prof_details.jpg" alt="Деталі.Професіум в цифрах">
+      <img src="images/prof_details.jpg" alt="Деталі.Професіум в цифрах" width="1440" height="680"
+         class="professium_details_img">
 
       <div class="advantages">
 
@@ -217,15 +225,17 @@
 
          <h2 class="curators_title"><span>Вони будуть поруч.</span> <br> І вкладатимуться у вас</h2>
 
-         <div class="curators_list">
+         <div class="curators_list mt50">
 
             <div class="curators_item">
 
-               <img src="images/volvov.jpg" alt="Олексій Волков" class="curators_item_image">
+               <img src="images/volvov.jpg" alt="Олексій Волков" class="curators_item_image" width="290" height="440">
 
                <p class="curators_item_position">Куратор</p>
 
-               <p class="curators_item_name">Олексій Волков</p>
+               <a href="#" target="_blank">
+                  <p class="curators_item_name">Олексій Волков</p>
+               </a>
 
                <p class="curators_item_about">Delivery Director в Levi9. Понад 9 років в управлінні проєктами. </p>
 
@@ -233,11 +243,14 @@
 
             <div class="curators_item">
 
-               <img src="images/yaremenko.jpg" alt="Сергій Яременко" class="curators_item_image">
+               <img src="images/yaremenko.jpg" alt="Сергій Яременко" class="curators_item_image" width="290"
+                  height="440">
 
                <p class="curators_item_position">Куратор</p>
 
-               <p class="curators_item_name">Сергій Яременко</p>
+               <a href="#" target="_blank">
+                  <p class="curators_item_name">Сергій Яременко</p>
+               </a>
 
                <p class="curators_item_about">Менеджер продукту в ЛУН, екс продуктовий аналітик в MacPaw.</p>
 
@@ -245,11 +258,14 @@
 
             <div class="curators_item">
 
-               <img src="images/granovskyi.jpg" alt="Юрій Грановський" class="curators_item_image">
+               <img src="images/granovskyi.jpg" alt="Юрій Грановський" class="curators_item_image" width="290"
+                  height="440">
 
                <p class="curators_item_position">Куратор</p>
 
-               <p class="curators_item_name">Юрій Грановський</p>
+               <a href="#" target="_blank">
+                  <p class="curators_item_name">Юрій Грановський</p>
+               </a>
 
                <p class="curators_item_about">Співзасновник «Агентів змін». Головний з досліджень, залучення
                   користувачів в дизайн-процес і тестування.</p>
@@ -258,11 +274,13 @@
 
             <div class="curators_item">
 
-               <img src="images/kras'ko.jpg" alt="Ольга Красько" class="curators_item_image">
+               <img src="images/kras'ko.jpg" alt="Ольга Красько" class="curators_item_image" width="290" height="440">
 
                <p class="curators_item_position">Куратор</p>
 
-               <p class="curators_item_name">Ольга Красько</p>
+               <a href="#" target="_blank">
+                  <p class="curators_item_name">Ольга Красько</p>
+               </a>
 
                <p class="curators_item_about">Cтарша UX дослідниця в OLX Group, співзасновниця R9. Research Community.
                </p>
@@ -271,11 +289,13 @@
 
             <div class="curators_item">
 
-               <img src="images/bus'.jpg" alt="Віктор Бусь" class="curators_item_image">
+               <img src="images/bus'.jpg" alt="Віктор Бусь" class="curators_item_image" width="290" height="440">
 
                <p class="curators_item_position">Куратор</p>
 
-               <p class="curators_item_name">Віктор Бусь</p>
+               <a href="#" target="_blank">
+                  <p class="curators_item_name">Віктор Бусь</p>
+               </a>
 
                <p class="curators_item_about">Head of Marketing в Restream. </p>
 
@@ -295,7 +315,7 @@
 
          <div class="curriculum_list">
 
-            <div class="curriculum_item">
+            <div class="curriculum_item" id="module1">
 
                <p class="curriculum_item_module">01 модуль</p>
 
@@ -386,7 +406,7 @@
 
             </div>
 
-            <div class="curriculum_item">
+            <div class="curriculum_item" id="module2">
 
                <p class="curriculum_item_module">02 модуль</p>
 
@@ -477,7 +497,7 @@
 
             </div>
 
-            <div class="curriculum_item">
+            <div class="curriculum_item" id="module3">
 
                <p class="curriculum_item_module">03 модуль</p>
 
@@ -568,7 +588,7 @@
 
             </div>
 
-            <div class="curriculum_item">
+            <div class="curriculum_item" id="module4">
 
                <p class="curriculum_item_module">04 модуль</p>
 
@@ -710,8 +730,8 @@
 
                            </div>
 
-                           <img src="images/autograph.svg" alt=""
-                              class="curriculum_item_description_text_with_autograph_image">
+                           <img src="images/autograph.svg" alt="autograph"
+                              class="curriculum_item_description_text_with_autograph_image" width="326" height="125">
 
                         </div>
 
@@ -742,11 +762,12 @@
 
          <h2 class="students_projects_title"><span>Проєкти.</span> <br> Так вміють студенти</h2>
 
-         <div class="students_projects_list">
+         <div class="students_projects_list mt50">
 
             <div class="students_projects_item">
 
-               <img src="images/students_projects1.jpg" alt="CJM для «Сільпо»" class="students_projects_item_image">
+               <img src="images/students_projects1.jpg" alt="CJM для «Сільпо»" class="students_projects_item_image"
+                  width="290" height="440">
 
                <p class="students_projects_item_position">Research</p>
 
@@ -760,7 +781,7 @@
             <div class="students_projects_item">
 
                <img src="images/students_projects2.jpg" alt="Pre-sale для Cosmos in"
-                  class="students_projects_item_image">
+                  class="students_projects_item_image" width="290" height="440">
 
                <p class="students_projects_item_position">Analytics</p>
 
@@ -773,7 +794,7 @@
             <div class="students_projects_item">
 
                <img src="images/students_projects3.jpg" alt="User Persona для Нова Пошта"
-                  class="students_projects_item_image">
+                  class="students_projects_item_image" width="290" height="440">
 
                <p class="students_projects_item_position">Unit Economy</p>
 
@@ -787,7 +808,7 @@
             <div class="students_projects_item">
 
                <img src="images/students_projects4.jpg" alt="JTBD для Rocket (Ракета)"
-                  class="students_projects_item_image">
+                  class="students_projects_item_image" width="290" height="440">
 
                <p class="students_projects_item_position">Unit Economy</p>
 
@@ -871,7 +892,7 @@
 
          </div>
 
-         <button class="consult_me_btn">Проконсультуйте мене</button>
+         <a href="#" target="_blank"><button class="consult_me_btn">Проконсультуйте мене</button></a>
 
       </div>
 
@@ -879,7 +900,7 @@
 
    <section id="saving">
 
-      <img src="images/saving.jpg" alt="Вкладай час. Заощаджуй гроші">
+      <img src="images/saving.jpg" alt="Вкладай час. Заощаджуй гроші" class="saving_img" width="1440" height="680">
 
       <div class="saving_container">
 
@@ -893,9 +914,10 @@
 
                   <p class="saving_item_amount">-24 300 грн</p>
 
-                  <p class="saving_item_price">Загальна вартість всього професіума — 81 000 грн <br> Пройти всі модулі окремо — 105 300 грн</p>
+                  <p class="saving_item_price">Загальна вартість всього професіума — 81 000 грн <br> Пройти всі модулі
+                     окремо — 105 300 грн</p>
 
-                  <button class="go-to-professium">Вступити на професiум</button>
+                  <a href="#registration"><button class="go-to-professium">Вступити на професiум</button></a>
 
                </div>
 
@@ -917,9 +939,441 @@
 
    <section id="learning">
 
+      <div class="container">
 
+         <h2 class="learning_title"><span>Буде довго і складно.</span> <br> І ось чому це того варте</h2>
+
+         <div class="learning_list">
+
+            <div class="learning_list_item">
+
+               <img src="images/learning1.jpg" alt="Фундамент, а не каркас" class="learning_item_image" width="380"
+                  height="200">
+
+               <div class="learning_item_title">
+
+                  <span class="learning_item_title_number">01</span>
+
+                  <p>Фундамент, а не каркас</p>
+
+               </div>
+
+               <p class="learning_item_description">Будуєш непохитну базу, а не хапаєш мікронавички</p>
+
+            </div>
+
+            <div class="learning_list_item">
+
+               <img src="images/learning2.jpg" alt="Ніколи наодинці" class="learning_item_image" width="380"
+                  height="200">
+
+               <div class="learning_item_title">
+
+                  <span class="learning_item_title_number">02</span>
+
+                  <p>Ніколи наодинці</p>
+
+               </div>
+
+               <p class="learning_item_description">Отримай допомогу та підтримку від моменту вибору програми до виходу
+                  на ринок вакансій </p>
+
+            </div>
+
+            <div class="learning_list_item">
+
+               <img src="images/learning3.jpg" alt="Гнучкість" class="learning_item_image" width="380" height="200">
+
+               <div class="learning_item_title">
+
+                  <span class="learning_item_title_number">03</span>
+
+                  <p>Гнучкість</p>
+
+               </div>
+
+               <p class="learning_item_description">Роби перерви до 6 місяців між модулями, якщо забажаєш </p>
+
+            </div>
+
+            <div class="learning_list_item">
+
+               <img src="images/learning4.jpg" alt="Поряд з найкращими" class="learning_item_image" width="380"
+                  height="200">
+
+               <div class="learning_item_title">
+
+                  <span class="learning_item_title_number">04</span>
+
+                  <p>Поряд з найкращими</p>
+
+               </div>
+
+               <p class="learning_item_description">Навчайся поряд з крутими та амбітними одногрупниками, які розділяють
+                  твої погляди та переконання</p>
+
+            </div>
+
+            <div class="learning_list_item">
+
+               <img src="images/learning5.jpg" alt="Викладають топ практики" class="learning_item_image" width="380"
+                  height="200">
+
+               <div class="learning_item_title">
+
+                  <span class="learning_item_title_number">05</span>
+
+                  <p>Викладають топ практики</p>
+
+               </div>
+
+               <p class="learning_item_description">Ви зробите багато складних домашок та поповните портфоліо важливими
+                  проєктами. Have fun & survive.</p>
+
+            </div>
+
+            <div class="learning_list_item">
+
+               <img src="images/learning6.jpg" alt="Не екзамени, а проекти" class="learning_item_image" width="380"
+                  height="200">
+
+               <div class="learning_item_title">
+
+                  <span class="learning_item_title_number">06</span>
+
+                  <p>Не екзамени, а проекти</p>
+
+               </div>
+
+               <p class="learning_item_description">Перехід на наступний модуль лише за умови успішного завершення
+                  попереднього </p>
+
+            </div>
+
+         </div>
+
+      </div>
 
    </section>
+
+   <section id="access_library">
+
+      <div class="access_library_list">
+
+         <div class="access_library_item item1">
+
+            <h3 class="access_library_item_title">Доступ до Projector Library</h3>
+
+            <p>Цілий рік тобі буде доступний освітній Нетфлікс від Проджектора із сотнями лекцій та десятками онлайн
+               конференцій</p>
+
+         </div>
+
+         <div class="access_library_item item2">
+
+            <img src="images/access_item2.jpg" alt="4 курса Humanitarium" width="360" height="200">
+
+            <h3 class="access_library_item_title">4 курса Humanitarium</h3>
+
+            <p>Отримай доступ до 4 з 22 теоретичних відеокурсів на свій смак: історія мистецтв, гештальт сприйняття, ux
+               дослідження і багато іншого</p>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <section id="reading">
+
+      <div class="container">
+
+         <h2 class="reading_title"><span>Читальня.</span> <br> Матеріали по темі</h2>
+
+         <div class="reading_list mt50">
+
+            <div class="reading_item">
+
+               <img src="images/reading1.jpg" class="reading_item_image" width="290" height="440">
+
+               <p class="reading_item_position">Гараж</p>
+
+               <p class="reading_item_about">Корисні ресурси для продакт аналітиків</p>
+
+            </div>
+
+            <div class="reading_item">
+
+               <img src="images/reading2.jpg" class="reading_item_image" width="290" height="440">
+
+               <p class="reading_item_position">Гараж</p>
+
+               <p class="reading_item_about">5 порад, як підвищити ефективність користувацьких інтерв'ю</p>
+
+            </div>
+
+            <div class="reading_item">
+
+               <img src="images/reading3.jpg" class="reading_item_image" width="290" height="440">
+
+               <p class="reading_item_position">Гараж</p>
+
+               <p class="reading_item_about">Книги про проєктний менеджмент від Олексія Волкова</p>
+
+            </div>
+
+            <div class="reading_item">
+
+               <img src="images/reading4.jpg" class="reading_item_image" width="290" height="440">
+
+               <p class="reading_item_position">Гараж</p>
+
+               <p class="reading_item_about">Інтерв’ю: «Все це можна порівняти з дофаміновою петлею»: співзасновник
+                  Reface
+                  про нові виклики та свій бекграунд</p>
+
+            </div>
+
+            <div class="reading_item">
+
+               <img src="images/reading5.jpg" class="reading_item_image" width="290" height="440">
+
+               <p class="reading_item_position">Гараж</p>
+
+               <p class="reading_item_about">5 фактів про гроуз-маркетинг, важливих для кожного бізнесу</p>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <section id="any_questions">
+
+      <div class="container">
+
+         <h2 class="any_questions_title"><span>Маєш питання?</span> <br> Знайди відповідь</h2>
+
+         <div class="any_questions_list">
+
+            <details class="any_questions_list_item">
+               <summary>Який досвід має бути на старті?</summary>
+               <p class="any_questions_item_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                  nisi ipsum laudantium! Doloribus modi
+                  impedit quia optio a id praesentium magni quas hic commodi dolores animi error neque, nihil iusto.</p>
+            </details>
+
+            <details class="any_questions_list_item">
+               <summary>Чи можу я проходити модулі в довільному порядку?</summary>
+               <p class="any_questions_item_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                  nisi ipsum laudantium! Doloribus modi
+                  impedit quia optio a id praesentium magni quas hic commodi dolores animi error neque, nihil iusto.</p>
+            </details>
+
+            <details class="any_questions_list_item">
+               <summary>Чи гарантуєте ви працевлаштування?</summary>
+               <p class="any_questions_item_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                  nisi ipsum laudantium! Doloribus modi
+                  impedit quia optio a id praesentium magni quas hic commodi dolores animi error neque, nihil iusto.</p>
+            </details>
+
+            <details class="any_questions_list_item">
+               <summary>Чи буде в мене постійний менеджер / кураторм під час програми?</summary>
+               <p class="any_questions_item_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                  nisi ipsum laudantium! Doloribus modi
+                  impedit quia optio a id praesentium magni quas hic commodi dolores animi error neque, nihil iusto.</p>
+            </details>
+
+            <details class="any_questions_list_item">
+               <summary>Як відбувається оцінка моїх досягнень за один модуль?</summary>
+               <p class="any_questions_item_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                  nisi ipsum laudantium! Doloribus modi
+                  impedit quia optio a id praesentium magni quas hic commodi dolores animi error neque, nihil iusto.</p>
+            </details>
+
+            <details class="any_questions_list_item">
+               <summary>Що робити, якщо я пройшов/ла один з модулів програми раніше?</summary>
+               <p class="any_questions_item_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                  nisi ipsum laudantium! Doloribus modi
+                  impedit quia optio a id praesentium magni quas hic commodi dolores animi error neque, nihil iusto.</p>
+            </details>
+
+            <details class="any_questions_list_item">
+               <summary>Як відбувається оцінка моїх досягнень за один модуль?</summary>
+               <p class="any_questions_item_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                  nisi ipsum laudantium! Doloribus modi
+                  impedit quia optio a id praesentium magni quas hic commodi dolores animi error neque, nihil iusto.</p>
+            </details>
+
+         </div>
+
+         <p class="have_questions_txt">Ще маєте питання? Не соромтесь їх задати. Пишіть на пошту <a
+               href="mailto:hello@prjctr.com.ua">hello@prjctr.com.ua</a> або телефонуйте по телефону <a
+               href="tel:+380674189578">067 418-95-78</a>.</p>
+
+         <button class="consult_me_btn">Проконсультуйте мене</button>
+
+
+      </div>
+
+   </section>
+
+   <section id="registration">
+
+      <div class="container">
+
+         <h2 class="registration_title"><span>Реєстрація.</span> <br> Перший крок за тобою</h2>
+
+         <div class="registration_list">
+
+            <form action="/" id="registration_form">
+
+               <div class="registration_form_item">
+
+                  <input type="text" placeholder="Ім’я" required>
+
+               </div>
+
+               <div class="registration_form_item">
+
+                  <input type="text" placeholder="Прізвище" required>
+
+               </div>
+
+               <div class="registration_form_item select_item">
+
+                  <div class="registration_form_item_select">
+
+                     <div class="registration_form_item_select_image">
+
+                        <img src="images/option_UA.svg" alt="UA" width="26" height="29">
+
+                     </div>
+
+                  </div>
+
+                  <input type="text" placeholder="+380" required>
+
+               </div>
+
+               <div class="registration_form_item">
+
+                  <input type="text" placeholder="Email" required>
+
+               </div>
+
+               <input type="submit" class="registration_form_item_leave" value="Залишити заявку на професіум">
+
+               <p class="privacy">Продовжуючи ти погоджуєшся з <a href="#" target="_blank">Політикою
+                     Конфіденційності</a></p>
+
+            </form>
+
+            <div class="registration_questions">
+
+               <img src="images/manager.jpg" alt="manager" class="registration_questions_image" width="120"
+                  height="120">
+
+               <div class="registration_questions_text">
+
+                  <p class="registration_questions_title">Ще маєте питання? <br> Не соромтесь їх задати.</p>
+
+                  <a href="#" target="_blank"><button class="registration_questions_consult">Проконсультуйте
+                        мене</button></a>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <section id="other_areas">
+
+      <div class="container">
+
+         <h2 class="other_areas_title"><span>Інші професіуми.</span> <br> Вивчай інші програми</h2>
+
+         <div class="other_areas_list mt50">
+
+            <div class="other_areas_item">
+
+               <div class="other_areas_item_header">
+
+                  <h3 class="other_areas_item_title">Visual Communications. <br> Professium</h3>
+
+                  <p class="other_areas_item_level">А level</p>
+
+               </div>
+
+               <div class="other_areas_item_footer">
+
+                  <p class="months">12 місяців</p>
+
+                  <p class="count_modules">4 модулі</p>
+
+               </div>
+
+            </div>
+
+            <div class="other_areas_item">
+
+               <div class="other_areas_item_header">
+
+                  <h3 class="other_areas_item_title">Visual Communications. <br> Professium</h3>
+
+                  <p class="other_areas_item_level">А level</p>
+
+               </div>
+
+               <div class="other_areas_item_footer">
+
+                  <p class="months">12 місяців</p>
+
+                  <p class="count_modules">4 модулі</p>
+
+               </div>
+
+            </div>
+
+            <div class="other_areas_item">
+
+               <div class="other_areas_item_header">
+
+                  <h3 class="other_areas_item_title">Visual Communications. <br> Professium</h3>
+
+                  <p class="other_areas_item_level">А level</p>
+
+               </div>
+
+               <div class="other_areas_item_footer">
+
+                  <p class="months">12 місяців</p>
+
+                  <p class="count_modules">4 модулі</p>
+
+               </div>
+
+            </div>
+
+         </div>
+
+
+      </div>
+
+   </section>
+
+   <div class="modules_popup" style="margin: 0 auto;">
+
+      <p class="modules_popup_title">A level</p>
+      <p class="modules_popup_text">Вектор по опануванню професії Product Manager від 0 до першої роботи.</p>
+
+   </div>
 
 </body>
 
