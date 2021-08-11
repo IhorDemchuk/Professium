@@ -241,12 +241,10 @@ button {
 }
 
 .header_title {
-  font-size: 4rem;
   position: relative;
-  background: url(../images/A.png) no-repeat right;
-  background-size: contain;
 }
 .header_title h1 {
+  font-size: 130px;
   font-weight: 400;
   line-height: 120px;
 }
@@ -283,6 +281,11 @@ button {
 }
 .go_to_professium:hover {
   background-color: transparent;
+}
+
+.background_module {
+  background: url(../images/A.png) no-repeat right;
+  background-size: contain;
 }
 
 .breadcrumbs {
@@ -326,8 +329,8 @@ button {
   position: relative;
 }
 #modules .modules_list .modules_list_item {
-  min-width: 345px;
-  height: 340px;
+  min-width: 295px;
+  height: 305px;
   background-color: #23232E;
   padding: 20px;
   display: -webkit-box;
@@ -469,7 +472,6 @@ button {
 #professium_details .advantages .advantages_title {
   color: #101014;
   margin-top: -85px;
-  max-width: 940px;
 }
 #professium_details .advantages .advantages_title span {
   color: #3548FE;
@@ -522,8 +524,10 @@ button {
 #curriculum .curriculum_list .curriculum_item .curriculum_item_module {
   margin: 60px 0 0;
   position: relative;
-  min-width: 120px;
+  min-width: 190px;
   text-align: center;
+  font-size: 30px;
+  line-height: 30px;
 }
 #curriculum .curriculum_list .curriculum_item .curriculum_item_module::after {
   content: "";
@@ -567,7 +571,7 @@ button {
   text-transform: uppercase;
   color: #3548FE;
   margin-bottom: 10px;
-  letter-spacing: 0.15em;
+  letter-spacing: 1.5px;
 }
 #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely {
   text-transform: uppercase;
@@ -604,8 +608,10 @@ button {
 #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
   margin: 60px 0 0;
   position: relative;
-  min-width: 120px;
+  min-width: 190px;
   text-align: center;
+  font-size: 30px;
+  line-height: 30px;
 }
 #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container {
   max-width: 1030px;
@@ -648,7 +654,7 @@ button {
   text-transform: uppercase;
   color: #101014;
   margin-bottom: 10px;
-  letter-spacing: 0.15em;
+  letter-spacing: 1.5px;
 }
 #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph {
   display: -webkit-box;
@@ -1650,14 +1656,19 @@ footer .footer_bottom .part2 a:hover {
   background-color: #3548FE;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
+  .header_title h1 {
+    font-size: 150px;
+    line-height: 112px;
+  }
+
   #modules .modules_list .modules_list_item {
-    min-width: 295px;
-    height: 305px;
+    min-width: 345px;
+    height: 340px;
   }
 }
 @media screen and (max-width: 1300px) {
-  .header_title {
+  .header_title h1 {
     font-size: 3rem;
   }
 }
@@ -1673,8 +1684,8 @@ footer .footer_bottom .part2 a:hover {
 }
 @media screen and (max-width: 1024px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   h2 {
@@ -1682,33 +1693,44 @@ footer .footer_bottom .part2 a:hover {
     line-height: 64px;
   }
 
-  h3 {
-    font-size: 50px;
+  h3, #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
+    font-size: 60px;
     line-height: 48px;
   }
 
-  .header_title {
-    font-size: 2rem;
-  }
   .header_title h1 {
-    line-height: 60px;
+    line-height: 82px;
+    font-size: 110px;
   }
 
   #professium_details .advantages .advantages_list {
     margin-top: 100px;
   }
 
+  footer .footer_bottom .part2 {
+    -ms-grid-columns: 180px 400px 1fr;
+    grid-template-columns: 180px 400px 1fr;
+  }
+
+  #saving .saving_container .saving_title {
+    margin-top: -69px;
+  }
+
+  #saving .saving_container .saving_list {
+    margin-top: 100px;
+  }
+
+  #learning .learning_list {
+    grid-gap: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
   .header .header_navigation .menu_list, .header .header_part3, .header .header_part1 .choose_faculty {
     display: none;
   }
 
   .header .burger {
     display: inline-block;
-  }
-
-  footer .footer_bottom .part2 {
-    -ms-grid-columns: 180px 400px 1fr;
-    grid-template-columns: 180px 400px 1fr;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1756,15 +1778,11 @@ footer .footer_bottom .part2 a:hover {
   }
 
   #professium_details .advantages .advantages_title {
-    margin-top: -60px;
+    margin-top: -53px;
   }
 
   #professium_details .advantages .advantages_list {
     margin-top: 80px;
-  }
-
-  #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
-    visibility: hidden;
   }
 
   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text {
@@ -1897,13 +1915,53 @@ footer .footer_bottom .part2 a:hover {
   footer .footer_navigation {
     grid-gap: 10px;
   }
+
+  .header_title h1 {
+    font-size: 80px;
+    line-height: 60px;
+  }
+
+  .mt50 {
+    margin-top: 30px;
+  }
+
+  .mastery_vector h3, #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  .mastery_vector_link {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  #professium_details {
+    margin-top: 80px;
+  }
+
+  #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
+    margin: 30px 20px 0 0;
+  }
+
+  #curriculum .curriculum_list .curriculum_item .curriculum_item_module::after {
+    height: 98%;
+  }
+
+  #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
+    min-width: 144px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
+    visibility: hidden;
+  }
 }
 @media screen and (max-width: 500px) {
   .header_title {
-    font-size: 1.25rem;
     overflow-wrap: break-word;
   }
   .header_title h1 {
+    font-size: 1.25rem;
     line-height: 37.5px;
   }
 
@@ -2061,6 +2119,7 @@ footer .footer_bottom .part2 a:hover {
 
   .breadcrumbs {
     grid-gap: 5px;
+    margin-top: 25px;
   }
 
   #contacts .contacts_telephones a, #contacts .contacts_mail {
