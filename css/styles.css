@@ -23,7 +23,6 @@ html {
 
 body {
   background-color: #101014;
-  padding: 5px 0;
   color: #fff;
 }
 
@@ -59,10 +58,6 @@ button {
   cursor: pointer;
 }
 
-.mt50 {
-  margin-top: 50px;
-}
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -70,7 +65,7 @@ button {
 }
 
 .header {
-  padding: 15px 0;
+  padding: 12px 0 13px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -99,14 +94,14 @@ button {
           align-items: center;
 }
 .header .header_part1 .header_logo img {
-  width: 100%;
-  max-width: 250px;
+  max-width: 245px;
+  display: block;
 }
 .header .header_part1 .choose_faculty {
   text-transform: uppercase;
   font-size: 14px;
-  height: 40px;
-  width: 208px;
+  padding: 14px 18.5px 17px;
+  height: 45px;
   background: transparent;
   border: 1px solid #fff;
   -moz-border-radius: 50px;
@@ -116,11 +111,35 @@ button {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  letter-spacing: 1.5px;
-  line-height: 1;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header .header_part1 .choose_faculty:hover {
   background: #3548FE;
+}
+.header .header_part1 a {
+  text-decoration: none;
+}
+.header .header_part2 {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 100px;
 }
 .header .header_navigation {
   display: -webkit-box;
@@ -145,10 +164,9 @@ button {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  line-height: 1;
 }
 .header .header_navigation .menu_list .menu_list_item {
-  line-height: 1;
+  line-height: 14px;
 }
 .header .header_navigation .menu_list .menu_list_item a {
   font-size: 14px;
@@ -166,7 +184,7 @@ button {
   -o-transition: background-size 0.3s;
   -moz-transition: background-size 0.3s;
   transition: background-size 0.3s;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 .header .header_navigation .menu_list .menu_list_item a:hover {
   background-size: 100% 1px;
@@ -188,7 +206,7 @@ button {
   -moz-transition: 0.4s;
   transition: 0.4s;
 }
-.header .header_part3 {
+.header .header_login {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -203,7 +221,7 @@ button {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
   line-height: 20px;
 }
 .header .log_in_link {
@@ -234,7 +252,7 @@ button {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
   cursor: pointer;
   line-height: 20px;
 }
@@ -248,10 +266,12 @@ button {
 .header_title h1 {
   font-size: 130px;
   font-weight: 400;
-  line-height: 120px;
+  line-height: 97px;
+  margin-top: 25px;
 }
 .header_title span {
   color: #3548FE;
+  letter-spacing: -0.03em;
 }
 .header_title #module_level {
   position: absolute;
@@ -266,43 +286,58 @@ button {
 .go_to_professium {
   background-color: #3548FE;
   font-size: 14px;
-  max-width: 257px;
+  max-width: 216px;
   width: 100%;
   border: 2px solid #3548FE;
   -moz-border-radius: 50px;
        border-radius: 50px;
   padding: 10px 0;
   color: #fff;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 58px;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .go_to_professium:hover {
   background-color: transparent;
 }
 
 .background_module {
-  background: url(../images/A.png) no-repeat right;
-  background-size: contain;
+  background: url(../images/A.png) no-repeat right bottom;
+  background-size: 26%;
 }
 
 .breadcrumbs {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 25px;
-  margin-top: 80px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  grid-gap: 30px;
+  margin-top: 75px;
+  grid-auto-flow: column;
 }
 .breadcrumbs .breadcrumb_link {
-  font-size: 14px;
+  letter-spacing: -0.025em;
 }
 
 #modules {
-  margin-top: 100px;
+  margin-top: 115px;
 }
 #modules .amount_modules {
   font-size: 30px;
@@ -318,7 +353,14 @@ button {
           align-items: center;
 }
 #modules .amount_modules .amount_modules_info {
-  margin-left: 10px;
+  margin-left: 13px;
+}
+#modules .amount_modules .amount_modules_text {
+  letter-spacing: -0.035em;
+  line-height: 30px;
+}
+#modules .amount_modules a {
+  line-height: 1;
 }
 #modules .modules_list {
   display: -webkit-box;
@@ -329,12 +371,13 @@ button {
   overflow-x: auto;
   padding-bottom: 20px;
   position: relative;
+  margin-top: 55px;
 }
 #modules .modules_list .modules_list_item {
   min-width: 295px;
   height: 305px;
   background-color: #23232E;
-  padding: 20px;
+  padding: 11px 20px 25px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -362,8 +405,8 @@ button {
   line-height: 36px;
 }
 #modules .modules_list .modules_list_item .modules_list_item_time {
-  max-width: 190px;
-  min-height: 80px;
+  max-width: 197px;
+  min-height: 69px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -392,11 +435,11 @@ button {
   height: 2px;
   background: #fff;
   position: absolute;
-  -webkit-transform: rotate(130deg) translate(50px, -5px);
-     -moz-transform: rotate(130deg) translate(50px, -5px);
-      -ms-transform: rotate(130deg) translate(50px, -5px);
-       -o-transform: rotate(130deg) translate(50px, -5px);
-          transform: rotate(130deg) translate(50px, -5px);
+  -webkit-transform: rotate(135deg) translate(50px, -3px);
+     -moz-transform: rotate(135deg) translate(50px, -3px);
+      -ms-transform: rotate(135deg) translate(50px, -3px);
+       -o-transform: rotate(135deg) translate(50px, -3px);
+          transform: rotate(135deg) translate(50px, -3px);
 }
 #modules .modules_list .modules_list_item:last-child {
   margin-right: 0;
@@ -455,55 +498,57 @@ button {
   opacity: 1;
 }
 #modules .mastery_vector {
-  margin-top: 120px;
+  margin-top: 85px;
+  max-width: 925px;
 }
 #modules .mastery_vector .mastery_vector_link {
   display: block;
+  margin-top: 58px;
 }
 
 #professium_details {
-  margin-top: 120px;
+  margin-top: 123px;
 }
 #professium_details .professium_details_img {
   width: 100%;
 }
 #professium_details .advantages {
   background: #3548FE;
-  padding-bottom: 50px;
+  padding-bottom: 105px;
 }
 #professium_details .advantages .advantages_title {
   color: #101014;
-  margin-top: -85px;
+  margin-top: -87px;
 }
 #professium_details .advantages .advantages_title span {
   color: #3548FE;
 }
 #professium_details .advantages .advantages_list {
-  margin-top: 120px;
+  margin-top: 133px;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 40px 20px;
 }
 #professium_details .advantages .advantages_list .advantages_list_item_title {
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   border-bottom: 1px solid #fff;
   font-size: 2rem;
   line-height: 36px;
 }
 #professium_details .advantages .advantages_list .advantages_list_item_text {
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 #curators {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #curators .curators_title span {
   color: #3548FE;
 }
 
 #curriculum {
-  padding: 80px 0;
+  padding: 45px 0;
 }
 #curriculum .curriculum_title span {
   color: #3548FE;
@@ -573,7 +618,7 @@ button {
   text-transform: uppercase;
   color: #3548FE;
   margin-bottom: 10px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely {
   text-transform: uppercase;
@@ -590,7 +635,7 @@ button {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely:hover {
   background: #3548FE;
@@ -656,7 +701,7 @@ button {
   text-transform: uppercase;
   color: #101014;
   margin-bottom: 10px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph {
   display: -webkit-box;
@@ -691,21 +736,21 @@ button {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 #curriculum .curriculum_list .curriculum_item_join:hover {
   background-color: transparent;
 }
 
 #students_projects {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #students_projects .students_projects_title span {
   color: #3548FE;
 }
 
 #students_projects2 {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #students_projects2 .students_projects2_title span {
   color: #3548FE;
@@ -792,7 +837,7 @@ button {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 #suitable_program .consult_me_btn:hover {
   background-color: transparent;
@@ -837,7 +882,7 @@ button {
        border-radius: 50px;
   padding: 10px 0;
   color: #fff;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 #saving .saving_container .saving_list .saving_item .saving_item_amount {
@@ -846,7 +891,7 @@ button {
 }
 
 #learning {
-  padding: 80px 0 125px;
+  padding: 60px 0 125px;
 }
 #learning .learning_title span {
   color: #3548FE;
@@ -953,7 +998,7 @@ button {
 }
 
 #any_questions {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #any_questions .any_questions_title span {
   color: #3548FE;
@@ -1061,7 +1106,7 @@ button {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 #any_questions .consult_me_btn:hover {
   background-color: transparent;
@@ -1069,7 +1114,7 @@ button {
 }
 
 #registration {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #registration .registration_title span {
   color: #3548FE;
@@ -1222,7 +1267,7 @@ button {
 }
 
 #contacts {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #contacts .contacts_telephones {
   font-size: 75px;
@@ -1273,7 +1318,7 @@ button {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
   line-height: 1;
   font-size: 14px;
 }
@@ -1299,7 +1344,7 @@ footer .footer_navigation .footer_navigation_item .navigation_item_title {
   color: #3548FE;
   font-size: 14px;
   line-height: 1;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -1383,7 +1428,7 @@ footer .footer_bottom .part2 {
 }
 footer .footer_bottom .part2 .copyright {
   font-size: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 footer .footer_bottom .part2 a {
   color: #fff;
@@ -1406,7 +1451,7 @@ footer .footer_bottom .part2 a:hover {
 }
 
 #other_areas {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 #other_areas .other_areas_title span {
   color: #3548FE;
@@ -1486,7 +1531,7 @@ footer .footer_bottom .part2 a:hover {
   font-size: 14px;
   margin-bottom: 20px;
   line-height: 14px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 .modules_popup .modules_popup_text {
   font-size: 16px;
@@ -1547,6 +1592,7 @@ footer .footer_bottom .part2 a:hover {
   overflow: auto hidden;
   padding-bottom: 30px;
   position: relative;
+  margin-top: 70px;
 }
 .curators_list::after, .curators_list::before, .students_projects_list::after, .students_projects_list::before, .reading_list::after, .reading_list::before {
   content: url(../images/arrow_right.png);
@@ -1631,7 +1677,8 @@ footer .footer_bottom .part2 a:hover {
   color: #3548FE;
   font-size: 14px;
   text-transform: uppercase;
-  margin: 30px 0;
+  margin: 23px 0;
+  letter-spacing: 0.1em;
 }
 .curators_list .curators_item .curators_item_name, .curators_list .curators_item .students_projects_item_name, .curators_list .students_projects_item .curators_item_name, .curators_list .students_projects_item .students_projects_item_name, .curators_list .reading_item .curators_item_name, .curators_list .reading_item .students_projects_item_name, .students_projects_list .curators_item .curators_item_name, .students_projects_list .curators_item .students_projects_item_name, .students_projects_list .students_projects_item .curators_item_name, .students_projects_list .students_projects_item .students_projects_item_name, .students_projects_list .reading_item .curators_item_name, .students_projects_list .reading_item .students_projects_item_name, .reading_list .curators_item .curators_item_name, .reading_list .curators_item .students_projects_item_name, .reading_list .students_projects_item .curators_item_name, .reading_list .students_projects_item .students_projects_item_name, .reading_list .reading_item .curators_item_name, .reading_list .reading_item .students_projects_item_name {
   font-size: 30px;
@@ -1640,7 +1687,7 @@ footer .footer_bottom .part2 a:hover {
 }
 .curators_list .curators_item .curators_item_about, .curators_list .curators_item .students_projects_item_about, .curators_list .students_projects_item .curators_item_about, .curators_list .students_projects_item .students_projects_item_about, .curators_list .reading_item .curators_item_about, .curators_list .reading_item .students_projects_item_about, .students_projects_list .curators_item .curators_item_about, .students_projects_list .curators_item .students_projects_item_about, .students_projects_list .students_projects_item .curators_item_about, .students_projects_list .students_projects_item .students_projects_item_about, .students_projects_list .reading_item .curators_item_about, .students_projects_list .reading_item .students_projects_item_about, .reading_list .curators_item .curators_item_about, .reading_list .curators_item .students_projects_item_about, .reading_list .students_projects_item .curators_item_about, .reading_list .students_projects_item .students_projects_item_about, .reading_list .reading_item .curators_item_about, .reading_list .reading_item .students_projects_item_about {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 20px;
 }
 .curators_list a, .students_projects_list a, .reading_list a {
   text-decoration: none;
@@ -1658,7 +1705,7 @@ footer .footer_bottom .part2 a:hover {
   background-color: #3548FE;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .header_title h1 {
     font-size: 150px;
     line-height: 112px;
@@ -1684,7 +1731,7 @@ footer .footer_bottom .part2 a:hover {
     grid-gap: 20px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -1735,7 +1782,7 @@ footer .footer_bottom .part2 a:hover {
     display: inline-block;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .container {
     padding-left: 60px;
     padding-right: 60px;
@@ -1921,10 +1968,6 @@ footer .footer_bottom .part2 a:hover {
   .header_title h1 {
     font-size: 80px;
     line-height: 60px;
-  }
-
-  .mt50 {
-    margin-top: 30px;
   }
 
   .mastery_vector h3, #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
