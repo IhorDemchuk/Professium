@@ -44,16 +44,33 @@ body {
    color: $white_color;
 }
 
+h1 {
+   font-size: 130px;
+   line-height: 75%;
+}
+
 h2 {
    font-size: 100px;
-   font-weight: 400;
-   line-height: 80px;
+   line-height: 80%;
 }
 
 h3 {
    font-size: 75px;
+   line-height: 80%;
+}
+
+h4 {
+   font-size: 40px;
+   line-height: 90%;
+}
+
+h5 {
+   font-size: 30px;
+   line-height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
    font-weight: 400;
-   line-height: 60px;
 }
 
 a {
@@ -246,8 +263,8 @@ button {
       
    font-size: $super_large_size;
       font-weight: 400;
-      line-height: 97px;
-      margin-top: 25px;
+      line-height: 98px;
+      margin-top: 26px;
    }
 
    & span {
@@ -270,15 +287,13 @@ button {
 .go_to_professium {
     background-color: $current_color;
     font-size: $small_size;
-    max-width: 216px;
-    width: 100%;
     border: 2px solid $current_color;
     border-radius: 50px;
-    padding: 10px 0;
+    padding: 8px 18px 9px;
     color: #fff;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-top: 58px;
+    margin-top: 56px;
     transition: all .4s;
     display: flex;
     justify-content: center;
@@ -350,7 +365,7 @@ button {
        min-width: 295px;
       height: 305px;
       background-color: #23232E;
-      padding: 11px 20px 25px;
+      padding: 12px 20px 23px;
       display: flex;
       flex-direction: column;
       margin-right: 20px;
@@ -435,12 +450,12 @@ button {
 }
 
 .mastery_vector {
-   margin-top: 85px;
+   margin-top: 86px;
    max-width: 925px;
 
    .mastery_vector_link {
       display: block;
-      margin-top: 58px;
+      margin-top: 60px;
    }
 }
 
@@ -452,7 +467,7 @@ button {
 //Professium details start
 
 #professium_details {
-   margin-top: 123px;
+   margin-top: 121px;
 
    .professium_details_img {
       width: 100%;
@@ -460,11 +475,11 @@ button {
 
    .advantages {
       background: $current_color;
-      padding-bottom: 105px;
+      padding-bottom: 104px;
 
    .advantages_title {
       color: #101014;
-      margin-top: -87px;
+      margin-top: -88px;
 
       span {
          color: $current_color;
@@ -480,12 +495,11 @@ button {
     .advantages_list_item_title {
       padding-bottom: 37px;
       border-bottom: 1px solid #fff;
-      font-size: 2rem;
-      line-height: 36px;
+      line-height: 39px;
     }
 
     .advantages_list_item_text {
-      padding-top: 25px;
+      padding-top: 26px;
     }
 }
 
@@ -502,7 +516,7 @@ button {
 
 #curators {
 
-   padding: 65px 0;
+   padding: 59px 0;
 
    .curators_title {
 
@@ -521,7 +535,7 @@ button {
  
 #curriculum {
 
-   padding: 50px 0;
+   padding: 53px 0;
 
    .curriculum_title {
 
@@ -532,28 +546,27 @@ button {
    }
 
    .curriculum_list {
-      margin: 60px 0 0;
+      margin: 70px 0 0;
 
       .curriculum_item {
-         display: flex;
-         justify-content: space-evenly;
+         display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
 
          .curriculum_item_module {
-            margin: 60px 0 0;
+            margin: 69px 0 0;
     position: relative;
     min-width: 190px;
     text-align: center;
-    font-size: 30px;
-    line-height: 30px;
 
             &::after {
                content: "";
     position: absolute;
     width: 4px;
-    height: 100%;
+    height: 101%;
     background: #23232E;
-    left: 50%;
-    top: 0;
+    left: 51.5%;
+    top: 5px;
     transform: translate(-50%, 45px);
 
             }
@@ -561,23 +574,23 @@ button {
          }
 
          .curriculum_item_description {
-            max-width: 1030px;
+            max-width: 1040px;
             width: 100%;
             background: #23232E;
-            padding: 60px;
+            padding: 45px 60px 60px;
             margin-bottom: 20px;
 
             .curriculum_item_description_title {
-               margin-bottom: 50px;
+               margin-bottom: 56px;
             }
 
             .curriculum_item_description_text {
                display: grid;
-    grid-template-columns: 55% 35%;
-    grid-gap: 10%;
+               grid-template-columns: 56% 32%;
+               grid-gap: 12%;
     
                .curriculum_item_description_text_item {
-                  margin-bottom: 50px;
+                  margin-bottom: 45px;
 
                   &:last-child {
                      margin-bottom: 0;
@@ -588,7 +601,7 @@ button {
                   font-size: $small_size;
                   text-transform: uppercase;
                   color: $current_color;
-                  margin-bottom: 10px;
+                  margin-bottom: 5px;
                   letter-spacing: 0.1em;
                }
  
@@ -604,6 +617,10 @@ button {
                   color: $white_color;
                   transition: all .4s;
                   letter-spacing: 0.1em;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-top: -12px;
 
                   &:hover {
                      background: $current_color;
@@ -616,38 +633,39 @@ button {
 
       .curriculum_item_diploma {
          display: flex;
-         justify-content: space-evenly;
 
          .curriculum_item_module {
-            margin: 60px 0 0; 
+            margin: 89px 20px 0 0;
     position: relative;
     min-width: 190px;
     text-align: center;
-    font-size: 30px;
-    line-height: 30px;
 
          }
 
          .curriculum_item_diploma_container {
-            max-width: 1030px;
+            max-width: 1040px;
                width: 100%;
 
             .curriculum_item_diploma_description {
-               background: $current_color;
-               padding: 60px;
-               margin-bottom: 20px;
+               background-color: $current_color;
+               padding: 65px 60px 15px;
+               margin-bottom: 47px;
    
                .curriculum_item_diploma_description_header {
                   display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
    
                   .curriculum_item_diploma_description_title {
-                     margin-bottom: 50px;
+                     margin-bottom: 56px;
    
                      span {
                         color: #101014;
                      }
+                  }
+
+                  .curriculum_item_diploma_description_level {
+                     padding: 10px 2px;
                   }
                }
    
@@ -655,7 +673,7 @@ button {
    
    
                   .curriculum_item_description_text_item {
-                     margin-bottom: 50px;
+                     margin-bottom: 47px;
    
                      &:last-child {
                         margin-bottom: 0;
@@ -665,7 +683,7 @@ button {
                         font-size: $small_size;
                      text-transform: uppercase;
                      color: #101014;
-                     margin-bottom: 10px;
+                     margin-bottom: 4px;
                      letter-spacing: 0.1em;
                      }
                   }
@@ -693,15 +711,20 @@ button {
       .curriculum_item_join {
          background-color: $current_color;
          border: 2px solid $current_color;
-         height: 45px;
-         max-width: 125px;
-         width: 100%;
-         margin-top: 30px;
-         text-transform: uppercase;
-         border-radius: 50px;
-         color: $white_color;
-         transition: all .4s;
-         letter-spacing: 0.1em;
+         padding: 8px 19px 9px;
+    margin-top: 34px;
+    text-transform: uppercase;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: #fff;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    letter-spacing: 0.134em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
          &:hover {
             background-color: transparent;
@@ -720,15 +743,109 @@ button {
 //Students projects start
 
 #students_projects {
-padding: $padTopBottom;
+padding: 86px 0;
 
-   .students_projects_title {
+.students_projects_title {
 
+   span {
+      color: $current_color;
+   }
+}
 
-      span {
+.students_projects_list {
+   display: flex;
+   flex-wrap: nowrap;
+   overflow: auto hidden;
+   padding-bottom: 30px;
+   position: relative;
+   margin-top: 71px;
+
+   &::after, &::before {
+      content: url(../images/arrow_right.png);
+      background-color: $current_color;
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      top: 35%;
+      color: $white_color;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .4s;
+      cursor: pointer;
+   }
+
+   &::after {
+      right: 0;
+      transform: translate(-50%, -35%);
+   }
+
+   &::before {
+      left: 0; 
+      transform: translate(50%, -35%) rotate(180deg);
+   }
+
+   &:hover {
+
+      &::after, &::before {
+         visibility: visible;
+         opacity: 1;
+      }
+
+   }
+
+   .students_projects_item {
+      display: flex;
+      flex-direction: column;
+      width: 295px;
+      min-width: 295px;
+      margin-right: 20px;
+      height: 100%;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      .students_projects_item_image {
+         height: 440px;
+         object-fit: cover;
+         width: 100%;
+      }
+
+      .students_projects_item_position {
          color: $current_color;
+         font-size: $small_size;
+         text-transform: uppercase;
+         margin: 23px 0;
+    letter-spacing: 0.1em;
+      }
+
+      .students_projects_item_name {
+         font-size: 30px;
+         line-height: 30px;
+         margin-bottom: 10px;
+      }
+
+      .students_projects_item_about {
+         font-size: 16px;
+         line-height: 20px;
       }
    }
+
+   a {
+      text-decoration: none;
+      color: $white_color;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+   
 }
 
 //Students projects end
@@ -737,7 +854,7 @@ padding: $padTopBottom;
 //Students projects2 start
 
 #students_projects2 {
-   padding: $padTopBottom;
+   padding: 86px 0;
    
       .students_projects2_title {
    
@@ -746,6 +863,9 @@ padding: $padTopBottom;
             color: $current_color;
          }
       }
+
+      .students_projects2_list {
+         margin-top: 71px;
 
       .students_projects2_item {
          display: flex;
@@ -771,6 +891,8 @@ padding: $padTopBottom;
          }
       }
 
+      }
+
    }
    
    //Students projects2 end
@@ -780,7 +902,7 @@ padding: $padTopBottom;
 //Suitable program start
 
 #suitable_program {
-   padding-top: 80px;
+   padding-top: 23px;
    
       .suitable_program_title {
    
@@ -915,7 +1037,7 @@ padding: $padTopBottom;
 //Learning start
 
 #learning {
-   padding: $padTopBottom 125px;
+   padding: 10px 125px;
 
    .learning_title {
    
@@ -1051,7 +1173,7 @@ padding: $padTopBottom;
 
 #any_questions {
 
-   padding: $padTopBottom;
+   padding: 10px;
 
    .any_questions_title {
       
@@ -1172,7 +1294,7 @@ padding: $padTopBottom;
 //Registration start
 
 #registration {
-   padding: $padTopBottom;
+   padding: 10px;
 
    .registration_title {
    
@@ -1314,7 +1436,7 @@ padding: $padTopBottom;
 //Contacts
 
 #contacts {
-   padding: $padTopBottom;
+   padding: 10px;
 
    .contacts_telephones {
       font-size: 75px;
@@ -1507,7 +1629,7 @@ footer {
 
 #other_areas {
 
-   padding: $padTopBottom;
+   padding: 10px;
 
    .other_areas_title {
 
@@ -1616,7 +1738,7 @@ footer {
    overflow: auto hidden;
    padding-bottom: 30px;
    position: relative;
-   margin-top: 70px;
+   margin-top: 71px;
 
    &::after, &::before {
       content: url(../images/arrow_right.png);
@@ -1688,7 +1810,7 @@ footer {
 
       .curators_item_about, .students_projects_item_about {
          font-size: 16px;
-         line-height: 20px;
+         line-height: 18px;
       }
    }
 
@@ -1729,6 +1851,10 @@ footer {
 
 // Media queries
 
+
+
+
+
 @media screen and (min-width: 1441px) {
    .header_title {
    
@@ -1749,11 +1875,17 @@ footer {
    }
 }
 
-@media screen and (max-width: 1300px) {
-   .header_title {
-      h1 {
-      font-size: 3rem;
+@media screen and (max-width:1279px) {
+   h1 {
+      font-size: 110px;
    }
+   
+   h2 {
+      font-size: 80px;
+   }
+   
+   h3 {
+      font-size: 60px;
    }
 }
 
@@ -1765,27 +1897,17 @@ footer {
    .header .header_part1, .header .header_navigation .menu_list, .header .header_part3 {
       grid-gap: 20px;
    }
+   .header_title {
+      h1 {
+      font-size: 3rem;
+   }
+   }
 }
 
 @media screen and (max-width: 1025px) {
    .container {
       padding-left: 30px;
       padding-right: 30px;
-   }
-   h2 {
-      font-size: 80px;
-      line-height: 64px;
-   }
-   h3, #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
-      font-size: 60px;
-      line-height: 48px;
-   }
-   .header_title {
-
-      h1 {
-         line-height: 82px;
-         font-size: 110px;
-      }
    }
    #professium_details .advantages .advantages_list {
       margin-top: 100px;
@@ -1801,6 +1923,13 @@ footer {
    }
    #learning .learning_list {
       grid-gap: 30px;
+   }
+   h1 {
+      font-size: 80px;
+   }
+   
+   h2 {
+      font-size: 60px;
    }
 }
 
@@ -1845,14 +1974,6 @@ width: 23px;
            }
   }
      }
-   }
-   h2 {
-      font-size: 60px;
-      line-height: 48px;
-   }
-   h3 {
-      font-size: 50px;
-      line-height: 28px;
    }
    #professium_details .advantages .advantages_title {
       margin-top: -53px;
@@ -1980,6 +2101,22 @@ width: 23px;
 }
 
 @media screen and (max-width: 500px) {
+   h1 {
+      font-size: 50px;
+   }
+   
+   h2 {
+      font-size: 38px;
+   }
+   h3 {
+      font-size: 35px;
+   }
+   h4 {
+      font-size: 30px;
+   }
+   h5 {
+      font-size: 25px;
+   }
    .header_title {
       overflow-wrap: break-word;
 
@@ -1994,14 +2131,6 @@ width: 23px;
    }
    .go_to_professium, #curriculum .curriculum_list .curriculum_item_join, #saving .saving_container .saving_list .saving_item .go-to-professium, #any_questions .consult_me_btn, #registration .registration_list #registration_form .registration_form_item_leave,#curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely {
       max-width: 100%;
-   }
-   h2 {
-      font-size: 45px;
-      line-height: 35px;
-   }
-   h3 {
-      font-size: 35px;
-      line-height: 28px;
    }
    #professium_details .professium_details_img {
       height: 480px;
