@@ -3164,7 +3164,10 @@ width: 23px;
       footer .footer_navigation {
          grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
       }
-      footer .footer_navigation .footer_navigation_list.two_column_respons {
-         grid-template-columns: 1fr 1fr;
-      }
+}
+
+@media screen and (max-width: 450px) {
+   footer .footer_navigation .footer_navigation_list.two_column_respons {
+      grid-template-columns: 1fr 1fr;
+   }
 }
