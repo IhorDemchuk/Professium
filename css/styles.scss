@@ -157,13 +157,13 @@ button {
     .header_part2 {
        display: inline-grid;
        grid-auto-flow: column;
-       grid-gap: 100px;
+       grid-gap: 97px;
     }
 
     .header_navigation {
       display: flex;
       align-items: center;
-
+ 
       .menu_list {
          display: grid;
          grid-auto-flow: column;
@@ -205,8 +205,8 @@ button {
 
       .burger_row1,
       .burger_row2 {
-         width: 30px;
-         height: 4px;
+         width: 31px;
+         height: 2px;
          background-color: $white_color;
          margin: 6px 0;
          transition: 0.4s;
@@ -216,7 +216,7 @@ button {
       .header_login {
          display: grid;
          grid-auto-flow: column;
-         grid-gap: 30px;
+         grid-gap: 29px;
          align-items: center;
       }
 
@@ -289,7 +289,7 @@ button {
     font-size: $small_size;
     border: 2px solid $current_color;
     border-radius: 50px;
-    padding: 8px 18px 9px;
+    padding: 13px 18px 14px;
     color: #fff;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -298,6 +298,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 100%;
     
 
          &:hover {
@@ -471,6 +472,8 @@ button {
 
    .professium_details_img {
       width: 100%;
+      height: 680px;
+      object-fit: cover;
    }
 
    .advantages {
@@ -479,7 +482,7 @@ button {
 
    .advantages_title {
       color: #101014;
-      margin-top: -88px;
+      margin-top: -86px;
 
       span {
          color: $current_color;
@@ -493,7 +496,7 @@ button {
     grid-gap: 40px 20px;
 
     .advantages_list_item_title {
-      padding-bottom: 37px;
+      padding-bottom: 34px;
       border-bottom: 1px solid #fff;
       line-height: 39px;
     }
@@ -516,7 +519,7 @@ button {
 
 #curators {
 
-   padding: 59px 0;
+   padding: 60px 0 55px;
 
    .curators_title {
 
@@ -524,7 +527,99 @@ button {
       span {
          color: $current_color;
       }
-   } 
+   }
+
+   .curators_list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: auto hidden;
+      padding-bottom: 30px;
+      position: relative;
+      margin-top: 71px;
+   
+      &::after, &::before {
+         content: url(../images/arrow_right.png);
+         background-color: $current_color;
+         width: 48px;
+         height: 48px;
+         position: absolute;
+         top: 35%;
+         color: $white_color;
+         border-radius: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         visibility: hidden;
+         opacity: 0;
+         transition: all .4s;
+         cursor: pointer;
+      }
+   
+      &::after {
+         right: 0;
+         transform: translate(-50%, -35%);
+      }
+   
+      &::before {
+         left: 0; 
+         transform: translate(50%, -35%) rotate(180deg);
+      }
+   
+      &:hover {
+   
+         &::after, &::before {
+            visibility: visible;
+            opacity: 1;
+         }
+   
+      }
+   
+      .curators_item {
+         display: flex;
+         flex-direction: column;
+         width: 290px;
+         min-width: 290px;
+         margin-right: 20px;
+         height: 100%;
+   
+         &:last-child {
+            margin-right: 0;
+         }
+   
+         .curators_item_image {
+            height: 440px;
+            object-fit: cover;
+         }
+   
+         .curators_item_position {
+            color: $current_color;
+            font-size: $small_size;
+            text-transform: uppercase;
+            margin: 23px 0;
+       letter-spacing: 0.1em;
+         }
+   
+         .curators_item_name {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 7px;
+         }
+   
+         .curators_item_about {
+            font-size: 16px;
+            line-height: 19px;
+         }
+      }
+   
+      a {
+         text-decoration: none;
+         color: $white_color;
+   
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
 
 }
 
@@ -535,7 +630,7 @@ button {
  
 #curriculum {
 
-   padding: 53px 0;
+   padding: 56px 0;
 
    .curriculum_title {
 
@@ -554,7 +649,7 @@ button {
     grid-gap: 20px;
 
          .curriculum_item_module {
-            margin: 69px 0 0;
+            margin: 72px 0 0;
     position: relative;
     min-width: 190px;
     text-align: center;
@@ -577,7 +672,7 @@ button {
             max-width: 1040px;
             width: 100%;
             background: #23232E;
-            padding: 45px 60px 60px;
+            padding: 47px 60px 58px;
             margin-bottom: 20px;
 
             .curriculum_item_description_title {
@@ -609,7 +704,6 @@ button {
                   text-transform: uppercase;
                   font-size: $small_size;
                   max-width: 257px;
-                  height: 45px;
                   width: 100%;
                   background: transparent;
                   border: 1px solid #fff;
@@ -621,6 +715,8 @@ button {
                   justify-content: center;
                   align-items: center;
                   margin-top: -12px;
+                  line-height: 100%;
+                  padding: 13px 18px 16px;
 
                   &:hover {
                      background: $current_color;
@@ -648,7 +744,7 @@ button {
 
             .curriculum_item_diploma_description {
                background-color: $current_color;
-               padding: 65px 60px 15px;
+               padding: 67px 60px 15px;
                margin-bottom: 47px;
    
                .curriculum_item_diploma_description_header {
@@ -711,7 +807,7 @@ button {
       .curriculum_item_join {
          background-color: $current_color;
          border: 2px solid $current_color;
-         padding: 8px 19px 9px;
+         padding: 14px 19px;
     margin-top: 34px;
     text-transform: uppercase;
     -moz-border-radius: 50px;
@@ -725,6 +821,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 100%;
 
          &:hover {
             background-color: transparent;
@@ -743,7 +840,7 @@ button {
 //Students projects start
 
 #students_projects {
-padding: 86px 0;
+padding: 83px 0 0;
 
 .students_projects_title {
 
@@ -826,12 +923,12 @@ padding: 86px 0;
       .students_projects_item_name {
          font-size: 30px;
          line-height: 30px;
-         margin-bottom: 10px;
+         margin-bottom: 11px;
       }
 
       .students_projects_item_about {
          font-size: 16px;
-         line-height: 20px;
+         line-height: 19.5px;
       }
    }
 
@@ -854,7 +951,7 @@ padding: 86px 0;
 //Students projects2 start
 
 #students_projects2 {
-   padding: 86px 0;
+   padding: 81px 0;
    
       .students_projects2_title {
    
@@ -902,7 +999,7 @@ padding: 86px 0;
 //Suitable program start
 
 #suitable_program {
-   padding-top: 23px;
+   padding-top: 113px;
    
       .suitable_program_title {
    
@@ -913,20 +1010,20 @@ padding: 86px 0;
       }
 
       .suitable_program_list {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-         grid-gap: 5%;
-         margin-top: 60px;
+         display: flex;
+    margin-top: 116px;
+    justify-content: space-between;
 
          .suitable_program_list_part {
-            max-width: 500px;
 
             .suitable_program_list_item {
 
-               margin-bottom: 50px;
+               margin-bottom: 51px;
    
                .suitable_program_list_point {
-                  display: flex;
+                  display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
    
                   span {
                      color: $current_color;
@@ -939,6 +1036,10 @@ padding: 86px 0;
                   
                   color: $current_color;
                   margin-bottom: 10px;
+                  font-size: $small_size;
+                  line-height: 100%;
+                  text-transform: uppercase;
+                  letter-spacing: 0.1em;
                }
    
                &:last-child {
@@ -947,20 +1048,27 @@ padding: 86px 0;
    
             }
          }
+
+         .part1 {
+            max-width: 612px;
+         }
          
       }
 
       .consult_me_btn {
          background-color: $current_color;
          border: 2px solid $current_color;
-         height: 45px;
-         max-width: 255px;
-         width: 100%;
+         padding: 14px 20px;
          text-transform: uppercase;
          border-radius: 50px;
          color: $white_color;
          transition: all .4s;
-         letter-spacing: 0.1em;
+         letter-spacing: 0.124em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    line-height: 100%;
 
          &:hover {
             background-color: transparent;
@@ -976,15 +1084,17 @@ padding: 86px 0;
    //Saving start
 
 #saving {
-   margin-top: $mt120;
+   margin-top: 125px;
 
    .saving_img {
       width: 100%;
+      height: 680px;
+      object-fit: cover;
    }
 
    .saving_container {
       background-color: $current_color;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 
     .saving_title { 
       color: #101014;
@@ -997,32 +1107,43 @@ padding: 86px 0;
    }
 
    .saving_list {
-      margin-top: $mt120;
+      margin-top: 100px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 5%;
+      grid-gap: 20px;
 
       .saving_item {
-         max-width: 500px;
 
          .go-to-professium {
             background-color: #101014;
     font-size: $small_size;
-    margin-top: 30px;
-    max-width: 257px;
-    width: 100%;
+    margin-top: 34px;
+    padding: 15px 20px 18px;
     border: none;
     border-radius: 50px;
-    padding: 10px 0;
     color: #fff;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
          }
 
          .saving_item_amount {
-            font-size: 80px;
-            margin-bottom: 50px;
+            font-size: 100px;
+            margin-bottom: 46px;
+            line-height: 80%;
          }
+
+         a {
+            text-decoration: none;
+         }
+      }
+
+      .part2 {
+         margin-top: 15px;
+    max-width: 400px;
       }
    }
 
@@ -1037,7 +1158,7 @@ padding: 86px 0;
 //Learning start
 
 #learning {
-   padding: 10px 125px;
+   padding: 60px 0 80px;
 
    .learning_title {
    
@@ -1049,24 +1170,23 @@ padding: 86px 0;
    .learning_list {
       display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 53px 40px;
     max-width: 1220px;
-    margin-top: 60px;
+    margin-top: 70px;
 
       .learning_list_item {
 
 
          .learning_item_image {
-            height: 200px;
+            height: 202px;
             object-fit: cover;
          }
 
          .learning_item_title {
 
             display: flex;
-            font-size: 1.5rem;
             align-items: flex-start;
-            margin: 20px 0;
+            margin: 11px 0;
 
             .learning_item_title_number {
                color: $current_color;
@@ -1081,7 +1201,7 @@ padding: 86px 0;
                   height: 3px;
                   background: $current_color;
                   transform: rotate(-45deg);
-                  top: 50%;
+                  top: 55%;
                   right: 0;
                }
             }
@@ -1106,20 +1226,21 @@ padding: 86px 0;
 //Access library start
 
 #access_library {
+   padding: 72px 0 85px;
 
    .access_library_list {
       display: grid;
       grid-template-columns: 1fr 1fr;
 
       .access_library_item {
-         padding: 80px 10%;
+         padding: 73px 100px 83px;
          display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
          .access_library_item_title {
 
-            margin-bottom: 20px;
+            margin-bottom: 31px;
          }
       }
 
@@ -1134,9 +1255,10 @@ padding: 86px 0;
 
          img {
             width: auto;
-            max-width: 360px;
-            margin-left: 30%;
-            margin-bottom: 100px;
+    max-width: 360px;
+    margin-left: 31%;
+    margin-bottom: 95px;
+    margin-top: 10px;
          }
       }
 
@@ -1153,13 +1275,94 @@ padding: 86px 0;
 //Reading start
 
 #reading {
-   padding: 120px 0 80px;
+   padding: 14px 0 80px;
 
    .reading_title {
    
    
       span {
          color: $current_color;
+      }
+   }
+
+   .reading_list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: auto hidden;
+      padding-bottom: 30px;
+      position: relative;
+      margin-top: 70px;
+   
+      &::after, &::before {
+         content: url(../images/arrow_right.png);
+         background-color: $current_color;
+         width: 48px;
+         height: 48px;
+         position: absolute;
+         top: 35%;
+         color: $white_color;
+         border-radius: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         visibility: hidden;
+         opacity: 0;
+         transition: all .4s;
+         cursor: pointer;
+      }
+   
+      &::after {
+         right: 0;
+         transform: translate(-50%, -35%);
+      }
+   
+      &::before {
+         left: 0; 
+         transform: translate(50%, -35%) rotate(180deg);
+      }
+   
+      &:hover {
+   
+         &::after, &::before {
+            visibility: visible;
+            opacity: 1;
+         }
+   
+      }
+   
+      .reading_item {
+         display: flex;
+         flex-direction: column;
+         width: 290px;
+         min-width: 290px;
+         margin-right: 20px;
+         height: 100%;
+   
+         &:last-child {
+            margin-right: 0;
+         }
+   
+         .reading_item_image {
+            height: 440px;
+            object-fit: cover;
+         }
+   
+         .reading_item_position {
+            color: $current_color;
+            font-size: $small_size;
+            text-transform: uppercase;
+            margin: 13px 0;
+       letter-spacing: 0.1em;
+         }
+      }
+   
+      a {
+         text-decoration: none;
+         color: $white_color;
+   
+         &:hover {
+            text-decoration: underline;
+         }
       }
    }
 
@@ -1173,9 +1376,10 @@ padding: 86px 0;
 
 #any_questions {
 
-   padding: 10px;
+   padding: 29px 0;
 
    .any_questions_title {
+      margin-left: -20px;
       
       span {
          color: $current_color;
@@ -1184,20 +1388,21 @@ padding: 86px 0;
    }
 
    .any_questions_list {
-      margin: 60px 0 50px;
+      margin: 71px 0 48px;
       position: relative;
 
       .any_questions_list_item {
          max-width: 1280px;
          transition: all .8s;
-         border-top: 1px solid #000;
+         border-top: 1px solid #23232E;
 
          summary {
             display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 30px 30px 0;
-    font-size: 1.5rem;
+    padding: 25px 30px 33px 0;
+    font-size: 30px;
+    line-height: 100%;
     outline: none;
     cursor: pointer;
 
@@ -1205,13 +1410,17 @@ padding: 86px 0;
   &::-moz-list-bullet { list-style-type: none; }
    
             &::after {
-               content: '';
-               position: absolute;
-               right: 10px;
-               height: 25px;
-               width: 2px;
-               background-color: $white_color;
-               transition: all .5s;
+               content: "";
+    position: absolute;
+    right: 32px;
+    height: 25px;
+    width: 2px;
+    background-color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    transform: translate(0px, 6px);
             }
 
             &::before {
@@ -1222,6 +1431,21 @@ padding: 86px 0;
                width: 2px;
                transform: rotate(90deg);
                background-color: $white_color;
+               content: "";
+    position: absolute;
+    right: 32px;
+    height: 25px;
+    width: 2px;
+    -webkit-transform: rotate(
+90deg
+);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(
+90deg
+) translate(6px, 0);
+    background-color: #fff;
             }
 
             
@@ -1236,7 +1460,9 @@ padding: 86px 0;
                }
 
             &::after {
-               transform: rotate(-90deg);
+               transform: rotate(
+-90deg
+) translate(-5px, 0px);;
             }
 
          }
@@ -1249,7 +1475,7 @@ padding: 86px 0;
 
          &:last-child {
 
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #23232E;
          }
 
       }
@@ -1267,15 +1493,17 @@ padding: 86px 0;
    .consult_me_btn {
       background-color: $current_color;
       border: 2px solid $current_color;
-      margin-top: 30px;
-      height: 45px;
-      max-width: 255px;
-      width: 100%;
+      margin-top: 35px;
+      padding: 14px 18px;
       text-transform: uppercase;
       border-radius: 50px;
       color: $white_color;
       transition: all .4s;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.139em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 100%;
 
       &:hover {
          background-color: transparent;
@@ -1294,7 +1522,7 @@ padding: 86px 0;
 //Registration start
 
 #registration {
-   padding: 10px;
+   padding: 112px 0;
 
    .registration_title {
    
@@ -1306,13 +1534,13 @@ padding: 86px 0;
 
    .registration_list {
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
-    grid-gap: 10%;
-    margin-top: 60px;
+    grid-template-columns: 1.79fr 1fr;
+    grid-gap: 125px;
+    margin-top: 72px;
 
       .registration_form_item {
 
-         margin-bottom: 30px;
+         margin-bottom: 27px;
          
 
       }
@@ -1320,24 +1548,29 @@ padding: 86px 0;
       .select_item {
          display: flex;
          align-items: center;
+         position: relative;
+
+         input {
+            padding-left: 63px;
+         }
 
       }
 
       #registration_form {
          background-color: #23232E;
-         padding: 60px;
+         padding: 55px 60px 58px;
 
          input {
-            font-size: 1.5rem;
+            font-size: 20px;
+            line-height: 120%;
             color: $white_color;
             background: transparent;
-            padding-bottom: 10px;
+            padding-bottom: 19px;
             border: none;
             border-bottom: 1px solid#F1F3F6;
             width: 100%;
 
             &::placeholder {
-               font-size: 1.5rem;
                color: $white_color;
             }
             &:invalid {
@@ -1353,9 +1586,10 @@ padding: 86px 0;
          }
 
          .registration_form_item_select {
-            width: 55px;
+            width: 48px;
     margin-right: 15px;
-    position: relative;
+    position: absolute;
+    top: -3px;
 
             img {
                max-width: 26px;
@@ -1365,7 +1599,7 @@ padding: 86px 0;
                content: "";
     border-width: 7px;
     border-style: solid;
-    border-color: #8C899A transparent transparent transparent;
+    border-color: #fff transparent transparent transparent;
     position: absolute;
     top: 40%;
     right: 0;
@@ -1376,7 +1610,6 @@ padding: 86px 0;
          .registration_form_item_leave {
             max-width: 335px;
             width: 100%;
-            height: 45px;
             border-radius: 50px;
             text-transform: uppercase;
             background-color: $current_color;
@@ -1386,11 +1619,19 @@ padding: 86px 0;
             transition: all .4s;
             padding: 0;
             cursor: pointer;
+            line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    padding: 11px 20px 15px;
+    line-height: 100%;
          }
 
          .privacy {
             font-size: 16px;
-            margin-top: 20px;
+            margin-top: 16px;
 
             a { 
                color: $white_color;
@@ -1404,26 +1645,32 @@ padding: 86px 0;
          align-items: flex-start;
 
          .registration_questions_image {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
          }
 
          .registration_questions_title {
-            font-size: 1.5rem;
-            line-height: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
             color: $white_color;
          }
 
          .registration_questions_consult {
-            text-transform: uppercase;
-            max-width: 255px;
-            width: 100%;
-            height: 45px;
             border: 1px solid $white_color;
             background: transparent;
             color: $white_color;
             border-radius: 50px;
+            text-transform: uppercase;
+    padding: 14px 18px 17px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+    font-size: 14px;
 
+         }
+         a {
+            text-decoration: none;
          }
       }
 
@@ -1433,10 +1680,86 @@ padding: 86px 0;
 
 //Registration end
 
+
+
+//Other areas start
+
+#other_areas {
+
+   padding: 37px 0;
+
+   .other_areas_title {
+
+      span {
+         color: $current_color;
+      }
+
+   }
+
+   .other_areas_list {
+      margin-top: 54px;
+
+      .other_areas_item {
+         height: 420px;
+         background-size: cover;
+         padding: 25px 30px 34px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         margin-bottom: 20px;
+
+         .other_areas_item_title {
+            margin-bottom: 10px;
+         }
+
+
+         .other_areas_item_footer {
+            max-width: 204px;
+    min-height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+         .months {
+            text-align: right;
+            position: relative;
+
+            &::before {
+               content: "";
+    width: 35px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(
+136deg
+) translate(45px,0px);
+
+         }
+      }
+         }
+      }
+
+      .item1 {
+         background: url(../images/other_areas_item1.jpg) no-repeat center center;
+      }
+
+      .item2 {
+         background: url(../images/other_areas_item2.jpg) no-repeat center center;
+      }
+
+      .item3 {
+         background: url(../images/other_areas_item3.jpg) no-repeat center center;
+      }
+   }
+
+}
+
+//Other areas end
+
 //Contacts
 
 #contacts {
-   padding: 10px;
+   padding: 89px 0;
 
    .contacts_telephones {
       font-size: 75px;
@@ -1452,7 +1775,6 @@ padding: 86px 0;
 
    .contacts_mail {
       display: block;
-      text-decoration: none;
       font-size: 75px;
       line-height: 60px;
       margin-top: 60px;
@@ -1460,25 +1782,23 @@ padding: 86px 0;
    }
 
    .social_buttons {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      margin-top: 63px;
+      display: inline-grid;
+      grid-auto-flow: column;
       grid-gap: 10px;
 
       .social_buttons_item {
 
       text-transform: uppercase;
       font-size: $small_size;
-      height: 46px;
-      width: 100%;
       background: transparent;
       border: 1px solid #fff;
       border-radius: 50px;
       color: $white_color;
       transition: all .4s;
-      letter-spacing: 0.1em;
-      line-height: 1;
-      font-size: 14px;
+      letter-spacing: 0.11em;
+      line-height: 100%;
+      padding: 16px 18px;
 
       &:hover {
          background: $current_color;
@@ -1489,6 +1809,8 @@ padding: 86px 0;
 
 //Contacts
 
+
+
 //Footer
 
 footer {
@@ -1496,8 +1818,8 @@ footer {
    .footer_top {
       display: grid;
       grid-template-columns: 1fr 11fr;
-      grid-gap: 73px;
-      padding: 60px 0;
+      grid-gap: 72px;
+      padding: 49px 0 61px;
    }
 
       .footer_navigation {
@@ -1513,7 +1835,7 @@ footer {
                line-height: 1;
                letter-spacing: 0.1em;
                text-transform: uppercase;
-               margin-bottom: 30px;
+               margin-bottom: 25px;
             }
    
          }
@@ -1521,7 +1843,7 @@ footer {
          .footer_navigation_list {
             list-style: none;
             display: grid;
-            grid-gap: 10px;
+            grid-gap: 5px;
 
             .navigation_list_item {
 
@@ -1534,6 +1856,7 @@ footer {
        background-size: 0% 1px;
        transition: background-size .3s;
        font-size: 16px;
+       line-height: 120%;
    
                &:hover {
                   background-size: 100% 1px;
@@ -1550,7 +1873,7 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px 0;
+            padding: 21px 0;
             border-top: 1px solid #23232E;
             border-bottom: 1px solid #23232E;
 
@@ -1574,13 +1897,18 @@ footer {
             .choose_language {
                display: inline-grid;
                grid-auto-flow: column;
-               grid-gap: 10px;
+               grid-gap: 4px;
                color: $current_color;
-               font-size: 16px;
                text-transform: uppercase;
+               margin-top: -5px;
 
                .active {
                   color: $white_color;
+               }
+
+               p {
+               font-size: 16px;
+               line-height: 120%;
                }
             }
 
@@ -1625,67 +1953,7 @@ footer {
 
 
 
-//Other areas start
 
-#other_areas {
-
-   padding: 10px;
-
-   .other_areas_title {
-
-      span {
-         color: $current_color;
-      }
-
-   }
-
-   .other_areas_list {
-
-      .other_areas_item {
-         height: 420px;
-         background: url(../images/other_areas.jpg) no-repeat center center;
-         background-size: cover;
-         padding: 30px;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         margin-bottom: 20px;
-
-         .other_areas_item_title {
-            margin-bottom: 10px;
-         }
-
-
-         .other_areas_item_footer {
-            max-width: 220px;
-    min-height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-         .months {
-            text-align: right;
-            position: relative;
-
-            &::before {
-               content: "";
-    width: 35px;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    transform: rotate(
-130deg
-) translate(55px, 10px);
-
-         }
-      }
-         }
-      }
-   }
-
-}
-
-//Other areas end
 
 
 
@@ -1725,108 +1993,6 @@ footer {
  }
 
  //Keyframes for "Any questions"
-
-
-
-
-
-// Scrolling lists start
-
-.curators_list, .students_projects_list, .reading_list {
-   display: flex;
-   flex-wrap: nowrap;
-   overflow: auto hidden;
-   padding-bottom: 30px;
-   position: relative;
-   margin-top: 71px;
-
-   &::after, &::before {
-      content: url(../images/arrow_right.png);
-      background-color: $current_color;
-      width: 48px;
-      height: 48px;
-      position: absolute;
-      top: 35%;
-      color: $white_color;
-      border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: all .4s;
-      cursor: pointer;
-   }
-
-   &::after {
-      right: 0;
-      transform: translate(-50%, -35%);
-   }
-
-   &::before {
-      left: 0; 
-      transform: translate(50%, -35%) rotate(180deg);
-   }
-
-   &:hover {
-
-      &::after, &::before {
-         visibility: visible;
-         opacity: 1;
-      }
-
-   }
-
-   .curators_item, .students_projects_item, .reading_item {
-      display: flex;
-      flex-direction: column;
-      width: 290px;
-      min-width: 290px;
-      margin-right: 20px;
-      height: 100%;
-
-      &:last-child {
-         margin-right: 0;
-      }
-
-      .curators_item_image, .students_projects_image, .reading_item_image {
-         height: 440px;
-         object-fit: cover;
-      }
-
-      .curators_item_position, .students_projects_item_position, .reading_item_position {
-         color: $current_color;
-         font-size: $small_size;
-         text-transform: uppercase;
-         margin: 23px 0;
-    letter-spacing: 0.1em;
-      }
-
-      .curators_item_name, .students_projects_item_name {
-         font-size: 30px;
-         line-height: 30px;
-         margin-bottom: 10px;
-      }
-
-      .curators_item_about, .students_projects_item_about {
-         font-size: 16px;
-         line-height: 18px;
-      }
-   }
-
-   a {
-      text-decoration: none;
-      color: $white_color;
-
-      &:hover {
-         text-decoration: underline;
-      }
-   }
-}
-
-// Scrolling lists end
-
-
 
 
 // Styles scrollbar
@@ -1887,6 +2053,9 @@ footer {
    h3 {
       font-size: 60px;
    }
+   .header .header_part2 {
+      grid-gap: 35px;
+   }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1899,7 +2068,8 @@ footer {
    }
    .header_title {
       h1 {
-      font-size: 3rem;
+      font-size: 110px;
+      line-height: 84.5px;
    }
    }
 }
@@ -1909,20 +2079,242 @@ footer {
       padding-left: 30px;
       padding-right: 30px;
    }
-   #professium_details .advantages .advantages_list {
-      margin-top: 100px;
-   }
    footer .footer_bottom .part2 {
       grid-template-columns: 180px 400px 1fr;
    }
-   #saving .saving_container .saving_title {
+   #learning .learning_list {
+      grid-gap: 53px 22px;
+      margin-top: 63px;
+   }
+   .header .header_part1 .header_logo img {
+      max-width: 237px;
+   }
+   .header .header_login {
+      grid-gap: 19px;
+   }
+   .log_in svg{
+      margin-right: -2px;
+   }
+   .go_to_professium {
+      margin-top: 53px;
+   }
+   #modules .modules_list {
+      padding-bottom: 29px;
+   }
+   #modules .mastery_vector {
+      margin-top: 109px;
+   }
+   #modules .mastery_vector .mastery_vector_link {
+      margin-top: 56px;
+   }
+   #professium_details {
+      margin-top: 122px;
+   }
+   #professium_details .advantages .advantages_title {
       margin-top: -69px;
    }
-   #saving .saving_container .saving_list {
-      margin-top: 100px;
+   #professium_details .advantages .advantages_list {
+      margin-top: 108px;
+      grid-gap: 48px 25px;
    }
-   #learning .learning_list {
-      grid-gap: 30px;
+   #professium_details .advantages .advantages_list .advantages_list_item_title {
+      line-height: 90%;
+      padding-bottom: 36px;
+   }
+   #professium_details .advantages {
+      padding-bottom: 72px;
+   }
+   #curators {
+      padding: 62px 0 55px;
+   }
+   #curators .curators_list {
+      margin-top: 66px;
+      padding-bottom: 35px;
+   }
+   #curators .curators_list .curators_item .curators_item_position {
+      margin: 23px 0 24px;
+   }
+   #curriculum {
+      padding: 65px 0;
+   }
+   #curriculum .curriculum_list {
+      margin: 98px 0 0;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_module {
+      min-width: 144px;
+      margin: 57px 0 0;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description {
+      padding: 49px 40px 71px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title {
+      margin-bottom: 65px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .curriculum_item_description_subtitle {
+      margin-bottom: 4px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text {
+      grid-template-columns: 55% 41%;
+      grid-gap: 33px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .curriculum_item_description_text_item {
+      margin-bottom: 46px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_module:after {
+      height: 98%;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
+      margin: 24px 20px 0 0;
+      min-width: 144px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description {
+      padding: 28px 39px 15px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_level {
+      padding: 7px 12px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
+      max-width: 550px;
+      margin-bottom: 54px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item {
+      margin-bottom: 46px;
+   }
+   #students_projects {
+      padding: 81px 0 0;
+   }
+   #students_projects .students_projects_title {
+      margin-left: -20px;
+   }
+   #students_projects .students_projects_list {
+      margin-top: 65px;
+      padding-bottom: 33px;
+   }
+   #suitable_program {
+      padding-top: 146px;
+   }
+   #suitable_program .suitable_program_list {
+      margin-top: 112px;
+   }
+   #suitable_program .suitable_program_list .part1 {
+      max-width: 550px;
+   }
+   #suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item {
+      margin-bottom: 60px;
+   }
+   #suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item .suitable_program_list_point h5 {
+      font-size: 20px;
+      line-height: 120%;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph .curriculum_item_description_text_with_autograph_image {
+      max-width: 270px;
+   }
+   #suitable_program .suitable_program_list .part2 {
+      max-width: 295px;
+      margin-right: 13px;
+   }
+   #suitable_program .consult_me_btn {
+      margin-top: -25px;
+      padding: 14px 19px;
+      letter-spacing: 0.135em;
+   }
+   #saving {
+      margin-top: 122px;
+   }
+   #saving .saving_container {
+      padding-bottom: 98px;
+   }
+   #saving .saving_container .saving_title {
+      margin-top: -70px;
+   }
+   #saving .saving_container .saving_list {
+      grid-template-columns: 1.4fr 1fr;
+    grid-gap: 26px;
+   }
+   #saving .saving_container .saving_list .saving_item .saving_item_amount {
+      font-size: 80px;
+      margin-bottom: 43px;
+   }
+   #saving .saving_container .saving_list .part2 {
+      margin-top: 12px;
+   }
+   #learning {
+      padding: 65px 0;
+   }
+   #access_library {
+      padding: 18px 0 85px;
+   }
+   #access_library .access_library_list .access_library_item {
+      padding: 97px 32px 107px;
+   }
+   #reading {
+      padding: 22px 0 80px;
+      margin-left: -10px;
+   }
+   #reading .reading_list {
+      margin-top: 65px;
+   }
+   #reading .reading_list .reading_item .reading_item_position {
+      margin: 12px 0;
+   }
+   #reading .reading_list {
+      padding-bottom: 56px;
+   }
+   #any_questions {
+      padding: 64px 0;
+   }
+   #any_questions .any_questions_title {
+      margin-left: 0;
+   }
+   #any_questions .any_questions_list {
+      margin: 65px 0 48px;
+   }
+   #any_questions .any_questions_list .any_questions_list_item summary {
+      max-width: 700px;
+      padding: 24px 30px 35px 0;
+   }
+   #any_questions .any_questions_list .any_questions_list_item summary:before {
+      transform: rotate(90deg) translate(5px,0);
+   }
+   #any_questions .consult_me_btn {
+      margin-top: 29px;
+   }
+   #registration {
+      padding: 82px 0;
+
+      .registration_title {
+         margin-left: -10px;
+      }
+   }
+   #registration .registration_list {
+      grid-template-columns: 1fr 310px;
+    grid-gap: 96px;
+    margin-top: 67px;
+   }
+   #registration .registration_list #registration_form .registration_form_item_leave {
+      margin-top: 32px;
+   }
+   #registration .registration_list .registration_questions .registration_questions_title {
+      margin-bottom: 27px;
+   }
+   #registration .registration_list .registration_questions .registration_questions_consult {
+      padding: 14px 19px 17px;
+   }
+   #other_areas {
+      padding: 62px 0;
+   }
+   #other_areas .other_areas_list {
+      margin-top: 63px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+
+   .header .header_navigation .menu_list, .header .header_part3, .header .header_part1 .choose_faculty, .header .header_login {
+      display: none;
+   }
+   .header .burger {
+      display: inline-block;
    }
    h1 {
       font-size: 80px;
@@ -1933,32 +2325,42 @@ footer {
    }
 }
 
-@media screen and (max-width: 900px) {
-
-   .header .header_navigation .menu_list, .header .header_part3, .header .header_part1 .choose_faculty {
-      display: none;
-   }
-   .header .burger {
-      display: inline-block;
-   }
-}
-
 @media screen and (max-width: 769px) {
    .container {
       padding-left: 60px;
       padding-right: 60px;
    }
+   .header {
+      padding: 20px 0 13px;
+   }
+   .header .header_part1 .header_logo img {
+      max-width: 100%;
+   }
+   .header .header_part2 {
+      margin-right: 3px;
+   }
+   .breadcrumbs {
+      margin-top: 80px;
+   }
+   .header_title h1 {
+      margin-top: 18px;
+   }
    .go_to_professium {
-      margin-top: 20px;
+      margin-top: 45px;
    }
    #modules {
-      margin-top: 80px;
+      margin-top: 63px;
       .modules_list {
+         margin-top: 35px;
          .modules_list_item {
            min-width: 236px;
            height: 236px;
+           padding: 15px 18px 18px;
+           margin-right: 11px;
            .modules_list_item_title {
             overflow-wrap: break-word;
+            font-size: 30px;
+            line-height: 27px;
            }
            .modules_list_item_time {
               font-size: 16px;
@@ -1975,48 +2377,161 @@ width: 23px;
   }
      }
    }
+   #modules .mastery_vector {
+      margin-top: 74px;
+   }
+   #modules .mastery_vector .mastery_vector_link {
+      margin-top: 35px;
+   }
+   #professium_details {
+      margin-top: 63px;
+   }
+   #professium_details .professium_details_img {
+      height: 460px;
+   }
+   #professium_details .advantages {
+      padding-bottom: 63px;
+   }
    #professium_details .advantages .advantages_title {
       margin-top: -53px;
    }
    #professium_details .advantages .advantages_list {
-      margin-top: 80px;
+      margin-top: 65px;
+   }
+   #curators {
+      padding: 69px 0 63px;
+   }
+   #curators .curators_list {
+      margin-top: 61px;
+   }
+   #curriculum .curriculum_list {
+      margin: 60px 0 0;
+   }
+   #curriculum .curriculum_list .curriculum_item {
+      grid-gap: 23px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_module {
+      margin: 40px 0 0;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
+      margin: 50px 24px 0 0;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title {
+      margin-bottom: 29px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description {
+      padding: 34px 40px 40px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description {
+      padding: 27px 39px 40px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
+      margin-bottom: 27px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_level {
+      padding: 0;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description_text {
+      margin-top: 48px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item {
+      margin-bottom: 22px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description {
+      margin-bottom: 24px;
    }
    #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text {
       grid-template-columns: 1fr;
-    grid-gap: 50px;
+    grid-gap: 53px;
    }
    #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph {
       flex-wrap: wrap;
    }
-   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description, #curriculum .curriculum_list .curriculum_item .curriculum_item_description {
-      padding: 40px;
+
+   #students_projects {
+      padding: 44px 0 0;
    }
+   #students_projects .students_projects_title {
+      margin-left: 0;
+   }
+
+   #students_projects .students_projects_list {
+      margin-top: 61px;
+   }
+
+   #students_projects .students_projects_list .students_projects_item .students_projects_item_name {
+      margin-bottom: 13px;
+   }
+
+   #suitable_program {
+      padding-top: 107px;
+   }
+
    #suitable_program .suitable_program_list {
-      margin-bottom: 30px;
+      margin-bottom: 59px;
+      margin-top: 89px;
+   }
+   #suitable_program .suitable_program_list .part1 {
+      max-width: 385px;
+    margin-right: 35px;
+   }
+   #suitable_program .suitable_program_list .part2 {
+      margin-right: 0;
+   }
+   #suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item {
+      margin-bottom: 50px;
+   }
+   #suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item .suitable_program_list_point {
+      grid-gap: 10px;
+   }
+   #saving {
+      margin-top: 59px;
+   }
+   #saving .saving_img {
+      height: 460px;
    }
    #saving .saving_container {
       padding-bottom: 60px;
    }
    #saving .saving_container .saving_title {
-      margin-top: -53px;
+      margin-top: -46px;
    }
    #saving .saving_container .saving_list .saving_item .saving_item_amount {
       font-size: 60px;
+      margin-bottom: 37px;
    }
    #saving .saving_container .saving_list {
-      margin-top: 40px;
+      margin-top: 26px;
+      grid-template-columns: 1.7fr 1fr;
+    grid-gap: 29px;
    }
    #saving .saving_container .saving_list .saving_item {
       font-size: 16px;
+      line-height: 21px;
+   }
+   #saving .saving_container .saving_list .part2 {
+      margin-top: 8px;
+   }
+   #saving .saving_container .saving_list .part2 p {
+      line-height: 20px;
+   }
+   #saving .saving_container .saving_list .saving_item .go-to-professium {
+      margin-top: 33px;
    }
    #learning {
-      padding: 60px 0 85px;
+      padding: 47px 0;
    }
    #learning .learning_list {
-      grid-gap: 40px 20px;
+      grid-gap: 44px 21px;
    }
    #access_library .access_library_list {
       grid-template-columns: 100%;
+   }
+   #learning .learning_list .learning_list_item .learning_item_image {
+      height: 198px;
+   }
+   #learning .learning_list .learning_list_item .learning_item_title {
+      margin: 12px 0;
    }
    #access_library .access_library_list .access_library_item .access_library_item_title {
       font-size: 75px;
@@ -2080,24 +2595,15 @@ width: 23px;
       font-size: 16px;
       line-height: 1;
    }
-   #professium_details {
-      margin-top: 80px;
-   }
-   #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
-      margin: 30px 20px 0 0;
-   }
-   #curriculum .curriculum_list .curriculum_item .curriculum_item_module::after {
-      height: 98%;
-   }
-   #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
-    min-width: 144px;
-   }
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 767px) {
-   #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
-      visibility: hidden;
-   }
 }
 
 @media screen and (max-width: 500px) {
@@ -2131,10 +2637,6 @@ width: 23px;
    }
    .go_to_professium, #curriculum .curriculum_list .curriculum_item_join, #saving .saving_container .saving_list .saving_item .go-to-professium, #any_questions .consult_me_btn, #registration .registration_list #registration_form .registration_form_item_leave,#curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely {
       max-width: 100%;
-   }
-   #professium_details .professium_details_img {
-      height: 480px;
-      object-fit: cover;
    }
    #professium_details {
       margin-top: 60px;
