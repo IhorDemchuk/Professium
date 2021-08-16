@@ -789,7 +789,8 @@ button {
                      justify-content: space-between;
    
                      .curriculum_item_description_text_with_autograph_image {
-                        max-width: 325px;
+                        display: block;
+                        margin-top: -50px;
                      }
                   }
    
@@ -1673,10 +1674,14 @@ padding: 83px 0 0;
             text-decoration: none;
          }
       }
+      .registration_questions_mobile {
+         display: none;
+      }
 
    }
 
 }
+
 
 //Registration end
 
@@ -1820,6 +1825,10 @@ footer {
       grid-template-columns: 1fr 11fr;
       grid-gap: 72px;
       padding: 49px 0 61px;
+
+      .footer_logo_mobile {
+         display: none;
+      }
    }
 
       .footer_navigation {
@@ -1870,12 +1879,16 @@ footer {
       .footer_bottom {
 
          .part1 {
+            border-top: 1px solid #23232E;
+            border-bottom: 1px solid #23232E;
+         }
+
+         .part1 > .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 21px 0;
-            border-top: 1px solid #23232E;
-            border-bottom: 1px solid #23232E;
+            padding: 21px 100px;
+            max-width: 1440px;
 
             .footer_socials {
                display: inline-grid;
@@ -1901,6 +1914,7 @@ footer {
                color: $current_color;
                text-transform: uppercase;
                margin-top: -5px;
+               align-items: center;
 
                .active {
                   color: $white_color;
@@ -2059,7 +2073,7 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-   .container {
+   .container, footer .footer_bottom .part1>.container {
       padding-left: 40px;
       padding-right: 40px;
    }
@@ -2075,7 +2089,7 @@ footer {
 }
 
 @media screen and (max-width: 1025px) {
-   .container {
+   .container, footer .footer_bottom .part1>.container {
       padding-left: 30px;
       padding-right: 30px;
    }
@@ -2191,7 +2205,7 @@ footer {
       padding-bottom: 33px;
    }
    #suitable_program {
-      padding-top: 146px;
+      padding-top: 146px; 
    }
    #suitable_program .suitable_program_list {
       margin-top: 112px;
@@ -2207,7 +2221,7 @@ footer {
       line-height: 120%;
    }
    #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph .curriculum_item_description_text_with_autograph_image {
-      max-width: 270px;
+      margin: -40px 11px 0 0;
    }
    #suitable_program .suitable_program_list .part2 {
       max-width: 295px;
@@ -2326,7 +2340,7 @@ footer {
 }
 
 @media screen and (max-width: 769px) {
-   .container {
+   .container, footer .footer_bottom .part1>.container {
       padding-left: 60px;
       padding-right: 60px;
    }
@@ -2417,10 +2431,10 @@ width: 23px;
       margin: 50px 24px 0 0;
    }
    #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title {
-      margin-bottom: 29px;
+      margin-bottom: 30px;
    }
    #curriculum .curriculum_list .curriculum_item .curriculum_item_description {
-      padding: 34px 40px 40px;
+      padding: 34px 40px 40px 41px;
    }
    #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description {
       padding: 27px 39px 40px;
@@ -2438,7 +2452,7 @@ width: 23px;
       margin-bottom: 22px;
    }
    #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description {
-      margin-bottom: 24px;
+      margin-bottom: 26px;
    }
    #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text {
       grid-template-columns: 1fr;
@@ -2446,6 +2460,11 @@ width: 23px;
    }
    #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph {
       flex-wrap: wrap;
+      justify-content: flex-end;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph .curriculum_item_description_text_with_autograph_image {
+      margin: -49px -18px 0 0px;
+    height: 200px;
    }
 
    #students_projects {
@@ -2494,7 +2513,7 @@ width: 23px;
       padding-bottom: 60px;
    }
    #saving .saving_container .saving_title {
-      margin-top: -46px;
+      margin-top: -47px;
    }
    #saving .saving_container .saving_list .saving_item .saving_item_amount {
       font-size: 60px;
@@ -2516,7 +2535,7 @@ width: 23px;
       line-height: 20px;
    }
    #saving .saving_container .saving_list .saving_item .go-to-professium {
-      margin-top: 33px;
+      margin-top: 26px;
    }
    #learning {
       padding: 47px 0;
@@ -2534,21 +2553,63 @@ width: 23px;
       margin: 12px 0;
    }
    #access_library .access_library_list .access_library_item .access_library_item_title {
-      font-size: 75px;
-      line-height: 60px;
+      font-size: 38px;
+    line-height: 30px;
    }
    #access_library .access_library_list .item1 {
-      height: 580px;
+      height: 460px;
+      padding: 60px 169px 42px 58px;
    }
-   #access_library .access_library_list .access_library_item {
-      padding: 60px;
+   #access_library .access_library_list .item1 p {
+      font-size: 16px;
+    line-height: 20px;
+   }
+   #access_library .access_library_list .item2 {
+      padding: 50px 60px 61px;
+   }
+   #access_library .access_library_list .item2 img {
+      margin-left: auto;
+      margin-bottom: 34px;
+   }
+   #access_library .access_library_list .item2 .access_library_item_title {
+      margin-bottom: 31px;
+   }
+   #reading {
+      padding: 65px 0 80px;
+    margin-left: 0;
+   }
+   #reading .reading_list {
+      margin-top: 61px;
+   }
+   #reading .reading_list .reading_item {
+      width: 289px;
+      min-width: 289px;
+   }
+   #reading .reading_list {
+      padding-bottom: 35px;
+   }
+   #any_questions {
+      padding: 0;
    }
    #any_questions .any_questions_list {
-      margin: 50px 0 30px;
+      margin: 62px 0 25px;
+   }
+   #any_questions .any_questions_list .any_questions_list_item summary {
+      max-width: 520px;
+   }
+   #any_questions .consult_me_btn {
+      margin-top: 33px;
+   }
+   #registration {
+      padding: 109px 0 45px;
+   }
+   #registration .registration_title {
+      margin-left: 0;
    }
    #registration .registration_list {
       grid-template-columns: 100%;
     grid-gap: 50px;
+    margin-top: 61px;
    }
    #registration .registration_list .registration_questions {
       flex-direction: row;
@@ -2556,12 +2617,36 @@ width: 23px;
    #registration .registration_list .registration_questions .registration_questions_image {
       margin: 0 15px 0 0;
    }
-   #other_areas .other_areas_list .other_areas_item .other_areas_item_title {
-      font-size: 60px;
-      line-height: 48px;
-   }
    #registration .registration_list #registration_form {
-      padding: 60px 50px;
+      padding: 57px 39px 82px 50px;
+   }
+   #registration .registration_list #registration_form .registration_form_item_leave {
+      margin-top: 31px;
+   }
+   #registration .registration_list .registration_questions .registration_questions_title {
+      font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+   }
+   #registration .registration_list .registration_questions .registration_questions_text {
+      margin-top: -4px;
+   }
+   #registration .registration_list .registration_questions .registration_questions_consult {
+      margin-left: -4px;
+   }
+   #registration .registration_list #registration_form .privacy {
+      line-height: 21px;
+   }
+   #other_areas .other_areas_list .other_areas_item .other_areas_item_title {
+      font-size: 50px;
+    line-height: 40px;
+   }
+   #other_areas .other_areas_list .other_areas_item {
+      height: 420px;
+      padding: 29px 27px 34px;
+   }
+   #other_areas .other_areas_list .other_areas_item .other_areas_item_title {
+      margin-bottom: 8px;
    }
    .header .header_navigation {
       justify-content: flex-end;
@@ -2595,18 +2680,18 @@ width: 23px;
       font-size: 16px;
       line-height: 1;
    }
-
-
-
-
-
-
+   #contacts {
+      padding: 89px 0 40px;
+   }
 }
 
 @media screen and (max-width: 767px) {
 }
 
 @media screen and (max-width: 500px) {
+   .header .header_part2 {
+      margin-right: 0px;
+   }
    h1 {
       font-size: 50px;
    }
@@ -2627,91 +2712,435 @@ width: 23px;
       overflow-wrap: break-word;
 
       h1 {
-         font-size: 1.25rem;
-         line-height: 37.5px;
+         font-size: 44px;
+         line-height: 35px;
       }
    }
-   .container {
+   .container, footer .footer_bottom .part1>.container {
       padding-left: 20px;
       padding-right: 20px;
    }
-   .go_to_professium, #curriculum .curriculum_list .curriculum_item_join, #saving .saving_container .saving_list .saving_item .go-to-professium, #any_questions .consult_me_btn, #registration .registration_list #registration_form .registration_form_item_leave,#curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely {
-      max-width: 100%;
+   .breadcrumbs {
+      grid-gap: 5px;
+      margin-top: 29px;
+   }
+   .breadcrumbs .breadcrumb_link {
+      font-size: 16px;
+    line-height: 100%;
+   }
+   .go_to_professium {
+      margin-top: 28px;
+   }
+   .go_to_professium, #curriculum .curriculum_list .curriculum_item_join, #saving .saving_container .saving_list .saving_item .go-to-professium, #any_questions .consult_me_btn, #registration .registration_list #registration_form .registration_form_item_leave,#curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely, #suitable_program .consult_me_btn {
+      width: 100%;
+   }
+   #modules {
+      margin-top: 56px;
+   }
+   #modules .modules_list {
+      margin-top: 21px;
+      padding-bottom: 20px;
+   }
+   .mastery_vector h3 {
+      font-size: 35px;
+    line-height: 28px;
+   }
+   #modules .mastery_vector {
+      margin-top: 53px;
+   }
+   #modules .modules_list .modules_list_item {
+      min-width: 239px;
+    height: 239px;
+    padding: 17px 20px 20px;
+   }
+   #modules .modules_list .modules_list_item .modules_list_item_time {
+      max-width: 165px;
+      min-height: 67px;
+   }
+   #modules .modules_list .modules_list_item .modules_list_item_time .months:before {
+      transform: rotate(
+135deg
+) translate(48px,-1px);
+    width: 34px;
    }
    #professium_details {
-      margin-top: 60px;
+      margin-top: 62px;
    }
    #professium_details .advantages .advantages_title {
-      margin-top: -40px;
+      margin-top: -35px;
    }
    #professium_details .advantages .advantages_list {
       margin-top: 30px;
    }
    #professium_details .advantages .advantages_list .advantages_list_item_text {
       font-size: 14px;
+    line-height: 16px;
    }
    #professium_details .advantages .advantages_list .advantages_list_item_title {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
    }
    #professium_details .advantages .advantages_list .advantages_list_item_text {
       padding-top: 10px;
+   }
+   #professium_details .advantages .advantages_list .advantages_list_item:nth-child(1) {
+      order: 1;
+   }
+   #professium_details .advantages .advantages_list .advantages_list_item:nth-child(2) {
+      order: 3;
+   }
+   #professium_details .advantages .advantages_list .advantages_list_item:nth-child(3) {
+      order: 2;
+   }
+   #professium_details .advantages .advantages_list .advantages_list_item:nth-child(4) {
+      order: 4;
+   }
+   #curators {
+      padding: 55px 0;
+   }
+   #curators .curators_list {
+      margin-top: 35px;
+   }
+   #curators .curators_list .curators_item {
+      width: 250px;
+      min-width: 250px;
    }
    .curators_title, .suitable_program_title, #saving .saving_container .saving_title, .learning_title, #access_library .access_library_list .access_library_item .access_library_item_title,#any_questions .any_questions_title, .registration_title, .curriculum_item_description_title {
       font-size: 38px;
       line-height: 30px;
    }
-   .curators_list .curators_item .curators_item_image, .curators_list .curators_item .students_projects_image, .curators_list .curators_item .reading_item_image, .curators_list .students_projects_item .curators_item_image, .curators_list .students_projects_item .students_projects_image, .curators_list .students_projects_item .reading_item_image, .curators_list .reading_item .curators_item_image, .curators_list .reading_item .students_projects_image, .curators_list .reading_item .reading_item_image, .students_projects_list .curators_item .curators_item_image, .students_projects_list .curators_item .students_projects_image, .students_projects_list .curators_item .reading_item_image, .students_projects_list .students_projects_item .curators_item_image, .students_projects_list .students_projects_item .students_projects_image, .students_projects_list .students_projects_item .reading_item_image, .students_projects_list .reading_item .curators_item_image, .students_projects_list .reading_item .students_projects_image, .students_projects_list .reading_item .reading_item_image, .reading_list .curators_item .curators_item_image, .reading_list .curators_item .students_projects_image, .reading_list .curators_item .reading_item_image, .reading_list .students_projects_item .curators_item_image, .reading_list .students_projects_item .students_projects_image, .reading_list .students_projects_item .reading_item_image, .reading_list .reading_item .curators_item_image, .reading_list .reading_item .students_projects_image, .reading_list .reading_item .reading_item_image {
-      height: 305px;
+   #curators .curators_list .curators_item .curators_item_image {
+      height: 388px;
    }
-   .curators_list .curators_item, .curators_list .students_projects_item, .curators_list .reading_item, .students_projects_list .curators_item, .students_projects_list .students_projects_item, .students_projects_list .reading_item, .reading_list .curators_item, .reading_list .students_projects_item, .reading_list .reading_item {
-      width: 180px;
-    min-width: 180px;
+   #curators .curators_list .curators_item .curators_item_position {
+      font-size: 12px;
+    line-height: 100%;
+    margin: 17px 0;
    }
-   #curriculum .curriculum_list .curriculum_item, #curriculum .curriculum_list .curriculum_item_diploma {
+   #curators .curators_list .curators_item .curators_item_name {
+      font-size: 25px;
+      line-height: 100%;
+   }
+   #curators .curators_list {
+      padding-bottom: 20px;
+   }
+   #curriculum {
+      padding: 24px 0;
+   }
+   #curriculum .curriculum_title {
+      margin-bottom: 11px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_module:after {
+      content: none;
+   }
+   #curriculum .curriculum_list .curriculum_item {
+      grid-auto-flow: row;
+      grid-gap: 12px;
+   }
+   #curriculum .curriculum_list {
+      margin: 0;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_module {
+      text-align: left;
+      margin: 28px 0 0;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma {
       flex-wrap: wrap;
    }
-   #curriculum .curriculum_list .curriculum_item .curriculum_item_module, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
-      visibility: visible;
-      min-width: 100%;
-      text-align: left;
-      font-size: 25px;
-      margin-bottom: 10px;
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_title {
+      font-size: 35px;
+      line-height: 28px;
+      margin-bottom: 35px;
    }
-   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description, #curriculum .curriculum_list .curriculum_item .curriculum_item_description {
-      padding: 25px;
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description {
+      padding: 23px 57px 30px 20px;
+    margin: 0 -10px;
+    width: 106%;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .curriculum_item_description_subtitle, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item .curriculum_item_description_subtitle {
+      font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 10px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .curriculum_item_description_text_item .none_list li, #curriculum .curriculum_list .curriculum_item p, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item .none_list li {
+      line-height: 20px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .curriculum_item_description_text_item {
+      margin-bottom: 30px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text {
+      grid-gap: 29px;
+   }
+   #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely {
+      max-width: 100%;
+      margin-top: 35px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_module {
+      margin: 28px 0 13px;
+    text-align: left;
+    text-align: left;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container {
+      width: 106%;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description {
+      padding: 25px 20px 0px;
+      margin: 0 -10px 28px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_title {
+      font-size: 38px;
+      line-height: 30px;
+      margin-bottom: 21px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_header .curriculum_item_diploma_description_level {
+      margin-left: 5px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_description_text {
+      margin-top: 30px;
+   }
+   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph .curriculum_item_description_text_with_autograph_image {
+      max-width: 160px;
+      height: 193px;
+      margin: -95px 21px 0 0px;
    }
    #curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .curriculum_item_description_text_item, #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_item, #curriculum .curriculum_list .curriculum_item_attention {
       font-size: 16px;
+      line-height: 20px;
    }
-   #curriculum .curriculum_list .curriculum_item_diploma .curriculum_item_diploma_container .curriculum_item_diploma_description .curriculum_item_diploma_description_text .curriculum_item_description_text_with_autograph .curriculum_item_description_text_with_autograph_image {
-      width: 100%;
+   #curriculum .curriculum_list .curriculum_item_join {
+      margin-top: 23px;
    }
-   #curriculum, #students_projects, #reading, #registration, #other_areas {
-      padding: 60px 0;
+   #students_projects {
+      padding: 89px 0 0;
    }
-   #suitable_program {
-      padding-top: 60px;
+   #students_projects .students_projects_list {
+      margin-top: 35px;
+   }
+   #students_projects .students_projects_list .students_projects_item {
+      width: 251px;
+    min-width: 251px;
+   }
+   #students_projects .students_projects_list .students_projects_item .students_projects_item_position {
+      font-size: 12px;
+      line-height: 100%; 
+      margin: 19px 0;
+   }
+   #students_projects .students_projects_list .students_projects_item .students_projects_item_name {
+      font-size: 25px;
+    line-height: 20px;
+   }
+   #students_projects .students_projects_list .students_projects_item .students_projects_item_about {
+      line-height: 20px;
+   }
+   #students_projects .students_projects_list .students_projects_item .students_projects_item_image {
+      height: 386px;
+   }
+   #students_projects .students_projects_list { 
+      padding-bottom: 20px;
+   }
+   #suitable_program { 
+      padding-top: 76px;
    }
    #suitable_program .suitable_program_list {
-      margin-top: 30px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+      margin-bottom: 49px;
+   }
+   #suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item .suitable_program_list_point {
+      grid-gap: 8px;
+   }
+   #suitable_program .suitable_program_list .part1 {
+      max-width: 100%;
+    margin-right: 5px;
+    margin-bottom: 50px;
    }
    #suitable_program .suitable_program_list .suitable_program_list_part .suitable_program_list_item {
       margin-bottom: 30px;
    }
-   #suitable_program .suitable_program_list {
-      margin-bottom: 70px;
+   #saving {
+      margin-top: 61px;
+   }
+   #saving .saving_container {
+      padding-bottom: 62px;
    }
    #saving .saving_container .saving_title {
-      margin-top: -34px;
+      margin-top: -33px;
    }
-   #access_library .access_library_list .access_library_item {
-      padding: 40px 20px;
+   #saving .saving_container .saving_list {
+      grid-template-columns: 100%;
+      grid-gap: 18px;
+   }
+   #saving .saving_container .saving_list .saving_item .saving_item_amount {
+      font-size: 50px;
+    line-height: 37.5px;
+    margin-bottom: 19px;
+    margin-left: 2px;
+   }
+   #saving .saving_container .saving_list .saving_item .saving_item_price {
+      line-height: 20px;
+   }
+   #saving .saving_container .saving_list .saving_item .go-to-professium {
+      margin-top: 22px;
+   }
+   #learning {
+      padding: 55px 0;
+   }
+   #learning .learning_list {
+      margin-top: 38px;
+      grid-gap: 32px 21px;
+   }
+   #learning .learning_list .learning_list_item .learning_item_image {
+      height: 160px;
+   }
+   #learning .learning_list .learning_list_item .learning_item_title .learning_item_title_number {
+      line-height: 20px;
+      max-width: 43px;
+   }
+   #learning .learning_list .learning_list_item .learning_item_title {
+      margin: 9px 0;
+   }
+   #learning .learning_list .learning_list_item .learning_item_description {
+      margin-left: 43px;
+      font-size: 16px;
+      line-height: 20px;
+   }
+   #access_library {
+      padding: 38px 0 39px;
+   }
+   #access_library .access_library_list .item1 {
+      padding: 34px 20px 42px;
+   }
+   #access_library .access_library_list .access_library_item .access_library_item_title {
+      margin-bottom: 23px;
+   }
+   #access_library .access_library_list .item2 {
+      padding: 34px 20px 63px;
+   }
+   #access_library .access_library_list .item2 p {
+      font-size: 16px;
+      line-height: 20px;
    }
    #access_library .access_library_list .item2 img {
-      margin-left: 15%;
+      width: 225px;
+    height: 120px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-bottom: 95px;
+    margin-top: 5px;
+   }
+   #access_library .access_library_list .item2 .access_library_item_title {
+      margin-bottom: 24px;
+   }
+   #reading {
+      padding: 14px 0 47px;
+   }
+   #reading .reading_list {
+      margin-top: 37px;
+   }
+   #reading .reading_list .reading_item {
+      width: 250px;
+    min-width: 250px;
+   }
+   #reading .reading_list .reading_item .reading_item_image {
+      height: 428px;
+   }
+   #reading .reading_list .reading_item .reading_item_position {
+      margin: 18px 0;
+      font-size: 12px;
+      line-height: 100%;
+   }
+   #reading .reading_list {
+      padding-bottom: 20px;
+   }
+   #any_questions .any_questions_list {
+      margin: 34px 0 25px;
+   }
+   #any_questions .any_questions_list .any_questions_list_item summary {
+      padding: 29px 10px 30px 0;
+      max-width: 295px;
+   }
+   #any_questions .any_questions_list .any_questions_list_item summary:before {
+      transform: rotate(90deg) translate(3px,3px);
+   }
+   #any_questions .any_questions_list .any_questions_list_item summary:after {
+      transform: translate(-3px,3px);
+   }
+   #registration {
+      padding: 83px 0 45px;
+   }
+   #registration .registration_list {
+      margin-top: 36px;
    }
    #registration .registration_list #registration_form {
-      padding: 20px;
+      padding: 37px 20px;
+   }
+   #registration .registration_list #registration_form .registration_form_item_select {
+      width: 33px;
+   }
+   #registration .registration_list #registration_form .registration_form_item_select:before {
+      border-width: 5px;
+   }
+   #registration .registration_list .select_item input {
+      padding-left: 41px;
+   }
+   #registration .registration_list .registration_questions {
+      display: none;
+   }
+
+   #registration .registration_list .registration_questions_mobile {
+      display: flex;
+      a {
+         width: 100%;
+      }
+   }
+   #registration .registration_list .registration_questions .registration_questions_image {
+      width: 80px;
+   }
+   #registration .registration_list .registration_questions_mobile .registration_questions_about {
+      display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+   }
+   #registration .registration_list .registration_questions .registration_questions_consult {
+      width: 100%;
+   }
+   #other_areas {
+      padding: 43px 0;
+   }
+   #other_areas .other_areas_title {
+      font-size: 38px;
+    line-height: 30px;
+    margin-bottom: 14px;
+   }
+   #other_areas .other_areas_list {
+      margin-top: 36px;
+   }
+   #other_areas .other_areas_list .other_areas_item {
+      padding: 26px 20px 26px;
+   }
+   #other_areas .other_areas_list .other_areas_item .other_areas_item_footer {
+      max-width: 158px;
+    min-height: 47px;
+   }
+   #other_areas .other_areas_list .other_areas_item .other_areas_item_footer p, #other_areas .other_areas_list .other_areas_item .other_areas_item_level {
+      font-size: 16px;
+      line-height: 20px;
+   }
+   #other_areas .other_areas_list .other_areas_item .other_areas_item_footer .months:before {
+      transform: rotate(
+136deg
+) translate(33px,-3px);
+   }
+   #other_areas .other_areas_list .other_areas_item .other_areas_item_title {
+      font-size: 30px;
+    line-height: 27px;
+   }
+   #contacts .contacts_mail h3, #contacts .contacts_telephones a h3 {
+      font-size: 30px;
+      line-height: 27px;
+      overflow-wrap: break-word;
+   }
+   footer .footer_top .footer_logo_mobile svg {
+      max-width: 100%;
    }
    #registration .registration_list #registration_form .registration_form_item_leave {
       font-size: 12px;
@@ -2722,20 +3151,20 @@ width: 23px;
    #registration .registration_list .registration_questions {
       flex-direction: column;
    }
-   #other_areas .other_areas_list .other_areas_item .other_areas_item_title {
-      font-size: 30px;
-      line-height: 27px;
+   footer .footer_top .footer_logo {
+      display: none;
    }
-   #other_areas .other_areas_list .other_areas_item {
-      padding: 20px;
-   }
-   .breadcrumbs {
-      grid-gap: 5px;
-      margin-top: 25px;
-   }
-   #contacts .contacts_telephones a, #contacts .contacts_mail {
-      font-size: 30px;
-      line-height: 20px;
-      overflow-wrap: break-word;
-   }
+   footer .footer_top .footer_logo_mobile {
+            display: block;
+      }
+      #contacts .social_buttons {
+         grid-template-columns: 1fr 1fr;
+         grid-auto-flow: row;
+      }
+      footer .footer_navigation {
+         grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      }
+      footer .footer_navigation .footer_navigation_list.two_column_respons {
+         grid-template-columns: 1fr 1fr;
+      }
 }
