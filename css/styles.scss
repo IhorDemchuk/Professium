@@ -19,6 +19,7 @@ $white_color: #fff;
 $super_large_size: 130px;
 $small_size: 14px;
 $mt120: 120px;
+$black_color: #101014;
 
 
 // General style 
@@ -40,7 +41,7 @@ html {
 }
 
 body {
-   background-color: #101014;
+   background-color: $black_color;
    color: $white_color;
 }
 
@@ -121,9 +122,18 @@ button {
 
       .header_logo {
 
-         img {
+         svg {
             max-width: 245px;
             display: block;
+
+            path {
+               transition: all .4s;
+            }
+
+            &:hover path {
+            
+               fill: $white_color;
+            }
          }
        }
 
@@ -144,7 +154,9 @@ button {
          align-items: center;
 
          &:hover {
-            background: $current_color;
+            background: $white_color;
+            color: $current_color;
+            border-color: $white_color;
          }
        }
 
@@ -210,6 +222,14 @@ button {
          background-color: $white_color;
          margin: 6px 0;
          transition: 0.4s;
+      }
+      &.active {
+         .burger_row1 {
+            transform: rotate(-45deg) translate(0px,5px);
+         }
+         .burger_row2 {
+            transform: rotate(45deg) translate(0px,-6px);
+         }
       }
       }
 
@@ -283,14 +303,16 @@ button {
    }
 
 }
-
+.go_to_professium_link {
+   text-decoration: none;
+}
 .go_to_professium {
     background-color: $current_color;
     font-size: $small_size;
     border: 2px solid $current_color;
     border-radius: 50px;
     padding: 13px 18px 14px;
-    color: #fff;
+    color: $white_color;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-top: 56px;
@@ -303,6 +325,7 @@ button {
 
          &:hover {
             background-color: transparent;
+            color: $current_color;
          }
 }
 
@@ -428,6 +451,9 @@ button {
    opacity: 0;
    transition: all .4s;
    cursor: pointer;
+   &:hover {
+      background-color: transparent;
+   }
 }
 
 &::after {
@@ -481,7 +507,7 @@ button {
       padding-bottom: 104px;
 
    .advantages_title {
-      color: #101014;
+      color: $black_color;
       margin-top: -86px;
 
       span {
@@ -719,7 +745,8 @@ button {
                   padding: 13px 18px 16px;
 
                   &:hover {
-                     background: $current_color;
+                     background: $white_color;
+                     color: $current_color;
                   }
                }
             }
@@ -756,7 +783,7 @@ button {
                      margin-bottom: 56px;
    
                      span {
-                        color: #101014;
+                        color: $black_color;
                      }
                   }
 
@@ -778,7 +805,7 @@ button {
                      .curriculum_item_description_subtitle {
                         font-size: $small_size;
                      text-transform: uppercase;
-                     color: #101014;
+                     color: $black_color;
                      margin-bottom: 4px;
                      letter-spacing: 0.1em;
                      }
@@ -826,6 +853,7 @@ button {
 
          &:hover {
             background-color: transparent;
+            color: $current_color;
          }
 
       }
@@ -1073,7 +1101,11 @@ padding: 83px 0 0;
 
          &:hover {
             background-color: transparent;
+            color: $current_color;
          }
+      }
+      a {
+         text-decoration: none;
       }
    }
 
@@ -1098,7 +1130,7 @@ padding: 83px 0 0;
     padding-bottom: 120px;
 
     .saving_title { 
-      color: #101014;
+      color: $black_color;
       margin-top: -85px;
       max-width: 940px;
 
@@ -1116,11 +1148,11 @@ padding: 83px 0 0;
       .saving_item {
 
          .go-to-professium {
-            background-color: #101014;
+            background-color: $black_color;
     font-size: $small_size;
     margin-top: 34px;
-    padding: 15px 20px 18px;
-    border: none;
+    padding: 13px 16px 15px;
+    border: 2px solid $black_color;
     border-radius: 50px;
     color: #fff;
     letter-spacing: 0.1em;
@@ -1129,6 +1161,12 @@ padding: 83px 0 0;
     justify-content: center;
     align-items: center;
     line-height: 100%;
+    transition: all .4s;
+
+    &:hover {
+       background-color: transparent;
+       color: $black_color;
+    }
          }
 
          .saving_item_amount {
@@ -1508,7 +1546,7 @@ padding: 83px 0 0;
 
       &:hover {
          background-color: transparent;
-         color: #101014;
+         color: $current_color;
       }
    }
 }
@@ -1628,6 +1666,11 @@ padding: 83px 0 0;
     margin-top: 30px;
     padding: 11px 20px 15px;
     line-height: 100%;
+
+            &:hover {
+               background-color: transparent;
+               color: $current_color;
+            }
          }
 
          .privacy {
@@ -1668,6 +1711,12 @@ padding: 83px 0 0;
     letter-spacing: 0.1em;
     line-height: 100%;
     font-size: 14px;
+    transition: all .4s;
+
+            &:hover {
+               background-color: $white_color;
+               color: $current_color;
+            }
 
          }
          a {
@@ -1775,6 +1824,11 @@ padding: 83px 0 0;
          line-height: 60px;
          color: $white_color;
          text-decoration: none;
+         transition: all .4s;
+
+         &:hover {
+            color: $current_color;
+         }
       }
    }
 
@@ -1784,6 +1838,14 @@ padding: 83px 0 0;
       line-height: 60px;
       margin-top: 60px;
       color: $white_color;
+
+      h3 {
+         transition: all .4s;
+         &:hover {
+            color: $current_color;
+            text-decoration: underline;
+         }
+      }
    }
 
    .social_buttons {
@@ -1803,10 +1865,11 @@ padding: 83px 0 0;
       transition: all .4s;
       letter-spacing: 0.11em;
       line-height: 100%;
-      padding: 16px 18px;
+      padding: 15px 18px 17px;
 
       &:hover {
-         background: $current_color;
+         background: $white_color;
+         color: $current_color;
       }
    }
    }
@@ -1828,6 +1891,19 @@ footer {
 
       .footer_logo_mobile {
          display: none;
+      }
+      .footer_logo {
+         svg {
+
+            path {
+               transition: all .4s;
+            }
+
+            &:hover path {
+            
+               fill: $white_color;
+            }
+         }
       }
    }
 
@@ -1923,6 +1999,12 @@ footer {
                p {
                font-size: 16px;
                line-height: 120%;
+               transition: all .4s;
+
+                  &:hover {
+                     color: $white_color;
+                     cursor: pointer;
+                  }
                }
             }
 
@@ -2100,7 +2182,7 @@ footer {
       grid-gap: 53px 22px;
       margin-top: 63px;
    }
-   .header .header_part1 .header_logo img {
+   .header .header_part1 .header_logo svg {
       max-width: 237px;
    }
    .header .header_login {
@@ -2320,15 +2402,20 @@ footer {
    #other_areas .other_areas_list {
       margin-top: 63px;
    }
+   .background_module {
+      background-size: 32%;
+   }
 }
 
 @media screen and (max-width: 900px) {
 
-   .header .header_navigation .menu_list, .header .header_part3, .header .header_part1 .choose_faculty, .header .header_login {
+   .header .header_part3, .header .header_part1 .choose_faculty, .header .header_login {
       display: none;
    }
    .header .burger {
       display: inline-block;
+      z-index: 999;
+      position: fixed;
    }
    h1 {
       font-size: 80px;
@@ -2336,6 +2423,23 @@ footer {
    
    h2 {
       font-size: 60px;
+   }
+   .header .header_navigation .menu_list {
+      grid-auto-flow: row;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      max-width: 350px;
+      right: -400px;
+      transition: all .3s;
+      background-color: $current_color;
+      padding: 55px 20px 30px;
+      border-radius: 10px 0 10px 10px;
+      grid-gap: 15px;
+      z-index: 99;
+   }
+   .burger.active~ul.menu_list {
+      right: 0px;
    }
 }
 
@@ -2347,7 +2451,7 @@ footer {
    .header {
       padding: 20px 0 13px;
    }
-   .header .header_part1 .header_logo img {
+   .header .header_part1 .header_logo svg {
       max-width: 100%;
    }
    .header .header_part2 {
@@ -2682,6 +2786,9 @@ width: 23px;
    }
    #contacts {
       padding: 89px 0 40px;
+   }
+   .background_module {
+    background-size: 29%;
    }
 }
 
@@ -3155,7 +3262,7 @@ width: 23px;
       display: none;
    }
    footer .footer_top .footer_logo_mobile {
-            display: block;
+            display: block; 
       }
       #contacts .social_buttons {
          grid-template-columns: 1fr 1fr;
@@ -3164,6 +3271,9 @@ width: 23px;
       footer .footer_navigation {
          grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
       }
+   .background_module {
+      background-size: 46%;
+   }
 }
 
 @media screen and (max-width: 450px) {
