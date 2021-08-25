@@ -2569,6 +2569,130 @@ footer {
 
 } 
  
+.faculty_modal, .filter_modal {
+   background-color: $white_color;
+   max-width: 375px;
+   width: 100%;
+   padding: 30px 20px 9px;
+   position: fixed;
+   display: none;
+   opacity: 0;
+   z-index: 38;
+   left: 50%;
+   bottom: 0;
+   transform: translate(-50%, 0);
+
+   .faculty_modal_header {
+      font-size: $small_size;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $current_color;
+   }
+
+   .faculty_modal_list {
+      list-style: none;
+      padding: 24px 0 8px;
+    display: grid;
+    grid-gap: 1px;
+
+      .faculty_modal_list_item {
+         font-size: 25px;
+         line-height: 37.5px;
+         transition: all .2s;
+         padding-left: 4px;
+      }
+
+      .faculty_modal_list_item.active {
+         color: $current_color;
+      }
+   }
+
+   .results {
+      background-color: $current_color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $small_size;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $white_color;
+      width: 100%;
+      padding: 13px 0 14px;
+      border-radius: 50px;
+      border: 2px solid $current_color;
+   }
+
+   #close {
+      position: absolute;
+      top: 25px;
+    right: 41px;
+      cursor: pointer;
+
+      .close_item {
+         background-color: $current_color;
+         height: 28px;
+         width: 2px;
+         display: block;
+         position: absolute;
+
+         &:nth-child(1) {
+            transform: rotate(-45deg);
+         }
+
+         &:nth-child(2) {
+            transform: rotate(45deg);
+         }
+      }
+   }
+
+   .filter_item {
+      padding: 20px 0;
+
+      .title {
+         margin-bottom: 15px;
+         font-size: $small_size;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $current_color;
+      }
+
+      input[type='radio'] {
+         width: 20px;
+         height: 20px;
+         margin-right: 5px;
+      }
+
+      label {
+         font-size: 16px;
+         line-height: 120%;
+      }
+
+      .filter_item_content {
+         margin-bottom: 6px;
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   } 
+}
+
+#myOverlay {
+   z-index: 37;
+   position: fixed;
+   background-color: rgba(0,0,0,.7);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   cursor: pointer;
+   display: none;
+ }
+
+
 //All courses page
 
 
@@ -3942,6 +4066,9 @@ width: 23px;
    }
    #courses_list .courses_list_item, #courses_list .intensive_list_item, #intensive_list .courses_list_item, #intensive_list .intensive_list_item {
       height: 320px;
+   }
+   .internal_page footer .footer_navigation {
+      grid-gap: 20px;
    }
 }
 
