@@ -2429,10 +2429,6 @@ transition: all .4s;
             background-size: 107%;
          }
       }
-
-      .professiums_list_container {
-         overflow: hidden;
-      }
    }
 }
 
@@ -2696,7 +2692,515 @@ footer {
 //All courses page
 
 
+//Main page
 
+#faculty {
+   background-color: $current_color;
+
+   .faculty_img {
+      width: 100%;
+      height: 680px;
+      object-fit: cover;
+   }
+
+   .faculty_content {
+
+   .faculty_title {
+      color: $black_color;
+      margin-top: -86px;
+      margin-left: -12px;
+
+      span {
+         color: $current_color;
+      }
+   }
+}
+
+.faculty_list {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   padding: 70px 0 78px;
+
+   .faculty_list_item {
+      height: 315px;
+      border-top: 1px solid #101014;
+      border-left: 1px solid #101014;
+      padding: 14px 20px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+      transition: all .4s;
+
+      &:nth-child(4n+4), &:last-child {
+         border-right: 1px solid #101014;
+      }
+
+      &:nth-last-child(-n+4) {
+         border-bottom: 1px solid #101014;
+      }
+
+      .faculty_list_item_title {
+
+         span {
+            color: $white_color;
+         }
+      }
+
+      .faculty_list_item_text {
+         margin-bottom: 11px;
+      }
+      
+      .faculty_list_item_image {
+         max-height: 120px;
+         max-width: 205px;
+         object-fit: cover;
+         margin: 0 auto;
+         opacity: 0;
+      }
+
+      .faculty_list_item_consult {
+      border-radius: 50px;
+      text-transform: uppercase;
+      background-color: $current_color;
+      font-size: $small_size;
+      color: $white_color;
+      border: 2px solid $current_color;
+      transition: all .4s;
+      cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 0.1em;
+padding: 11px 14px 15px;
+line-height: 100%;
+margin: 0 auto;
+display: none;
+&:hover {
+   background-color: transparent;
+   color: $current_color;
+}
+      }
+
+      &:hover {
+         background-color: $white_color;
+
+         .faculty_list_item_title {
+
+            span {
+               color: $current_color;
+            }
+         }
+
+         .faculty_list_item_image {
+            opacity: 1;
+         }
+
+         .faculty_list_item_consult {
+            display: block;
+         }
+      }
+   }
+
+   .faculty_list_item_bottom {
+      max-width: 241px;
+      min-height: 49px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .professium {
+         text-align: right;
+         position: relative;
+
+         &::before {
+            content: "";
+            width: 16px;
+            height: 2px;
+            background: $black_color;
+            position: absolute;
+            transform: rotate(135deg) translate(30px,-6px);
+
+      }
+   }
+
+ }
+}
+}
+
+#professiums_main {
+   margin: 60px 0;
+
+   .professiums_main_title {
+      margin-left: -9px;
+
+      span {
+         color: $current_color;
+      }
+
+   }
+
+   .professiums_list {
+
+      margin: 70px 0 30px;
+
+      .item1 {
+         background: url(../images/other_areas_item1.jpg) no-repeat center center;
+      }
+
+      .item2 {
+         background: url(../images/professiums2.jpg) no-repeat center center;
+      }
+
+      .item3 {
+         background: url(../images/other_areas_item2.jpg) no-repeat center center;
+      }
+
+      .item4 {
+         background: url(../images/professiums4.jpg) no-repeat center center;
+      }
+
+      .professiums_item {
+         height: 420px;
+         padding: 25px 30px 34px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         margin-bottom: 20px;
+         color: $white_color;
+         background-size: 100%;
+         transition: background-size .4s;
+         cursor: pointer;
+
+         .professiums_item_title {
+            margin-bottom: 10px;
+         }
+
+
+         .professiums_item_footer {
+            max-width: 204px;
+    min-height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+         .months {
+            text-align: right;
+            position: relative;
+
+            &::before {
+               content: "";
+    width: 35px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(
+136deg
+) translate(45px,0px);
+
+         }
+      }
+         }
+
+         &:hover {
+            background-size: 107%;
+         }
+      }
+   }
+
+   .professiums_main_more {
+      max-width: 223px;
+      width: 100%;
+      border-radius: 50px;
+      text-transform: uppercase;
+      background-color: $current_color;
+      font-size: $small_size;
+      color: $white_color;
+      border: 2px solid $current_color;
+      transition: all .4s;
+      cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 0.1em;
+padding: 11px 14px 15px;
+line-height: 100%;
+
+      &:hover {
+         background-color: transparent; 
+         color: $current_color;
+      }
+   }
+}
+
+.internal_page {
+
+   #access_library {
+      padding: 22px 0 100px;
+
+      .access_library_item_title {
+         color: $white_color;
+      }
+
+      .access_library_item {
+         padding: 22px 100px 85px;
+
+         p {
+            color: $white_color;
+         }
+
+         .look_now {
+            border-radius: 50px;
+            text-transform: uppercase;
+            background-color: $current_color;
+            font-size: $small_size;
+            color: $white_color;
+            border: 2px solid $current_color;
+            transition: all .4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0.1em;
+      padding: 11px 14px 15px;
+      line-height: 100%;
+      max-width: 187px;
+      margin-top: 35px;
+      margin-bottom: -5px;
+      
+            &:hover {
+               background-color: transparent;
+               color: $current_color;
+            }
+         }
+
+         .buy_journal {
+            border-radius: 50px;
+            text-transform: uppercase;
+            background-color: $black_color;
+            font-size: $small_size;
+            color: $white_color;
+            border: 2px solid $black_color;
+            transition: all .4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0.1em;
+      padding: 11px 14px 15px;
+      line-height: 100%;
+      max-width: 203px;
+      margin-top: 15px;
+      
+            &:hover {
+               background-color: $white_color;
+               color: $current_color;
+            }
+         }
+
+      }
+
+      .item2 {
+         padding: 70px 60px 80px;
+
+         img {
+            max-width: 340px;
+    margin-left: 37%;
+    margin-bottom: 70px;
+         }
+      }
+
+   }
+
+}
+
+#courses {
+   margin-bottom: 120px;
+
+   .courses_title {
+      margin-left: -11px;
+
+      span {
+         color: $current_color;
+      }
+
+   }
+
+   #courses_list {
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+      margin: 71px 0 30px;
+   }
+
+   .courses_more {
+      border-radius: 50px;
+      text-transform: uppercase;
+      background-color: $current_color;
+      font-size: $small_size;
+      color: $white_color;
+      border: 2px solid $current_color;
+      transition: all .4s;
+      cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 0.1em;
+padding: 11px 17px 15px;
+line-height: 100%;
+
+      &:hover {
+         background-color: transparent; 
+         color: $current_color;
+      }
+   }
+
+}
+
+#change_education {
+   background: url(../images/change_education.jpg) no-repeat center center;
+   height: 680px;
+   margin-bottom: 40px;
+
+   .container {
+      height: 100%;
+   }
+
+   .change_education_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      align-items: baseline;
+      padding: 80px 0;
+
+   }
+
+   .change_education_title {
+      color: $white_color;
+   }
+
+   .change_education_btn {
+      border-radius: 50px;
+      text-transform: uppercase;
+      background-color: $current_color;
+      font-size: $small_size;
+      color: $white_color;
+      border: 2px solid $current_color;
+      transition: all .4s;
+      cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 0.1em;
+padding: 11px 18px 15px;
+line-height: 100%;
+margin-top: 45px;
+
+      &:hover {
+         background-color: transparent; 
+         color: $current_color;
+      }
+   }
+}
+
+.internal_page {
+
+   #learning {
+      padding: 60px 0 75px;
+
+      .learning_title {
+         margin-left: -11px;
+      }
+
+      .learning_list {
+         grid-gap: 45px 21px;
+         max-width: 100%;
+
+         .learning_list_item {
+
+            .learning_item_image {
+               height: 200px;
+               width: 100%;
+            }
+         }
+      }
+
+   }
+
+   #registration.registration_main {
+      background-color: $white_color;
+
+      .registration_title {
+         span {
+            color: $current_color;
+         }
+      }
+
+      .registration_questions {
+
+         a {
+            color: $current_color;
+         }
+
+         .registration_questions_consult {
+            border-color: $current_color;
+            color: $current_color;
+            &:hover {
+               background-color: $current_color;
+               color: $white_color;
+            }
+         }
+      }
+   }
+
+}
+
+#graduates {
+   background-color: $current_color;
+   padding: 60px 0 80px;
+
+   .graduates_title {
+      margin-left: -9px;
+
+      span {
+         color: $white_color;
+      }
+
+   }
+
+   .graduates_list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: auto hidden;
+      margin-top: 70px;
+
+      .graduates_item {
+         display: flex;
+         flex-direction: column;
+         width: 420px;
+         min-width: 420px;
+         margin-right: 20px;
+   
+         &:last-child {
+            margin-right: 0;
+         }
+   
+         .graduates_item_img {
+            height: 280px;
+            object-fit: cover;
+         }
+   
+         .graduates_item_about {
+            padding: 16px 0 5px;
+            
+            span {
+               color: $white_color;
+            }
+         }
+      }
+   }
+}
+
+
+//Main page
 
 
 
@@ -2754,6 +3258,14 @@ footer {
    &::-webkit-scrollbar-thumb {
       background-color: $current_color;
    }
+}
+
+.graduates_list {
+
+   &::-webkit-scrollbar {
+      height: 0;
+   }
+
 }
 
 // Styles scrollbar
@@ -3082,7 +3594,7 @@ footer {
       padding: 27px 30px 34px;
    }
    .internal_page #registration {
-      padding: 65px 0 81px;
+      padding: 65px 0 74px;
    }
    .internal_page #registration .registration_title {
       margin-left: 0;
@@ -3098,12 +3610,6 @@ footer {
    .internal_page #registration .registration_list #registration_form .registration_form_item_leave {
       margin-top: 28px;
    }
-   .internal_page footer .footer_top {
-      grid-gap: 60px;
-   }
-   .internal_page footer .footer_navigation {
-      grid-gap: 20px;
-   }
    .internal_page footer .footer_logo svg {
       max-width: 144px;
       height: auto;
@@ -3112,13 +3618,111 @@ footer {
       grid-gap: 25px;
    }
    .internal_page footer .footer_navigation {
-      grid-gap: 10px;
+      grid-gap: 18px;
    }
    .internal_page footer .footer_top {
-      grid-gap: 20px;
-   }
-   .internal_page footer .footer_top {
+      grid-gap: 58px;
       grid-template-columns: 1fr 11fr;
+   }
+   #faculty .faculty_content .faculty_title {
+      margin-left: -5px;
+    font-size: 100px;
+   }
+   #faculty .faculty_list {
+      padding: 51px 0 78px;
+   }
+
+   #faculty .faculty_list .faculty_list_item:nth-child(3n+3) {
+      border-right: 1px solid #101014;
+   }
+
+   #faculty .faculty_list .faculty_list_item:nth-child(4n+4) {
+      border-right: 0;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-last-child(-n+4) {
+      border-bottom: 0;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-last-child(-n+3) {
+      border-bottom: 1px solid #101014;
+   }
+   #professiums_main {
+      margin: 65px 0;
+   }
+   #professiums_main .professiums_list .professiums_item {
+      background-size: cover;
+      padding: 27px 30px 34px;
+   }
+   #professiums_main .professiums_list {
+      margin: 66px 0 30px;
+   }
+   .internal_page #access_library {
+      padding: 16px 0 105px;
+   }
+   .internal_page #access_library .access_library_list .access_library_item .access_library_item_title {
+      margin-bottom: 28px;
+      margin-top: 38px;
+   }
+   .internal_page #access_library .access_library_list .access_library_item {
+      padding: 97px 30px 85px;
+   }
+   .internal_page #access_library .item2 img {
+      width: 270px;
+    height: 180px;
+    margin-left: 40%;
+    object-fit: cover;
+   }
+   .internal_page #access_library .access_library_list .access_library_item.item2 {
+      padding: 70px 30px 80px;
+   }
+   #courses .courses_title {
+      margin-left: -7px;
+   }
+   #courses #courses_list {
+      margin: 66px 0 32px;
+   }
+   .internal_page #learning {
+      padding: 65px 0 45px;
+   }
+   .internal_page #learning .learning_title, #graduates .graduates_title {
+      margin-left: 0px;
+   }
+   .internal_page #learning .learning_list {
+      margin-top: 66px;
+      grid-gap: 25px 20px;
+   }
+   #graduates {
+      padding: 64px 0 16px;
+   }
+   .internal_page #registration.registration_main #registration_form {
+      padding: 56px 72px 62px 58px;
+   }
+   .internal_page #registration.registration_main .registration_list .registration_form_item {
+      margin-bottom: 26px;
+   }
+   .internal_page #registration.registration_main .registration_list #registration_form input {
+      padding-bottom: 14px;
+   }
+   .internal_page #registration.registration_main .registration_list #registration_form .registration_form_item_leave {
+      margin-top: 31px;
+   }
+   .internal_page #registration.registration_main .registration_list {
+      grid-gap: 55px;
+   }
+   .internal_page #registration.registration_main .registration_list .registration_questions .registration_questions_title {
+      margin-bottom: 21px;
+   }
+   #contacts .contacts_telephones a h3, #contacts .contacts_mail h3 {
+      font-size: 75px;
+      line-height: 60px;
+   }
+   #contacts {
+      padding: 65px 0 84px;
+   }
+   #contacts .social_buttons {
+      margin-top: 44px;
+   }
+   footer .footer_top {
+      padding: 73px 0 35px;
    }
 }
 
@@ -3563,10 +4167,171 @@ width: 23px;
       width: 80px;
    }
    .internal_page #registration {
-      padding: 49px 0 81px;
+      padding: 49px 0 74px;
    }
    .internal_page #registration .registration_list #registration_form {
       padding: 46px 40px 82px 50px;
+   }
+   #faculty .faculty_img {
+      height: 460px;
+   }
+   #faculty .faculty_content .faculty_title {
+      margin-left: -2px;
+    font-size: 60px;
+    margin-top: -52px;
+   }
+   #professiums_main {
+      margin: 49px 0;
+   }
+
+   #professiums_main .professiums_main_title {
+      margin-left: -2px;
+   }
+   #professiums_main .professiums_list {
+      margin: 42px 0 30px;
+   }
+   #professiums_main .professiums_list .professiums_item .professiums_item_title {
+      font-size: 50px;
+   }
+   .internal_page #access_library .access_library_list .access_library_item {
+      padding: 97px 58px 44px;
+   }
+   .internal_page #access_library {
+      padding: 12px 0 48px;
+   }
+   .internal_page #access_library .access_library_list .access_library_item .access_library_item_title {
+      margin-bottom: 25px;
+    margin-top: 30px;
+   }
+   .internal_page #access_library .access_library_item .look_now {
+      margin-top: 34px;
+    margin-bottom: -5px;
+   }
+   .internal_page #access_library .access_library_list .access_library_item.item2 {
+      padding: 30px 58px 40px;
+   }
+   #access_library .access_library_list .item2 img {
+      width: 263px;
+    height: 141px;
+    margin-bottom: 98px;
+   }
+   .internal_page #access_library .access_library_item .buy_journal {
+      margin-top: 13px;
+   }
+   #courses {
+      margin-bottom: 61px;
+   }
+   #courses .courses_title {
+      margin-left: 0px;
+   }
+   #courses #courses_list {
+      margin: 63px 0 30px;
+   }
+   #change_education {
+      height: 460px;
+      background-size: cover;
+      margin-bottom: 0;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-child(3n+3) {
+      border-right: 0;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-child(2n+2) {
+      border-right: 1px solid #101014;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-last-child(-n+3) {
+      border-bottom: 0;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-last-child(-n+2) {
+      border-bottom: 1px solid #101014;
+   }
+   #change_education .change_education_title {
+      font-size: 38px;
+   }
+
+   #change_education .change_education_content {
+      padding: 41px 0;
+   }
+   #change_education .change_education_btn {
+      margin-top: 37px;
+   }
+   .internal_page #learning {
+      padding: 48px 0 33px;
+   }
+   .internal_page #learning .learning_list {
+      margin-top: 41px;
+      grid-gap: 2px 14px;
+   }
+   .internal_page #learning .learning_list .learning_list_item .learning_item_image {
+      height: 160px;
+   }
+   .internal_page #learning .learning_list .learning_list_item .learning_item_title h5 {
+      font-size: 25px;
+    line-height: 20px;
+   }
+   .internal_page #learning .learning_list .learning_list_item .learning_item_title .learning_item_title_number {
+      max-width: 44px;
+   }
+   .internal_page #learning .learning_list .learning_list_item .learning_item_title .learning_item_title_number:after {
+      width: 21px;
+   }
+   #graduates {
+      padding: 47px 0 11px;
+   }
+   #graduates .graduates_list {
+      margin-top: 43px;
+   }
+   #graduates .graduates_list .graduates_item {
+      width: 280px;
+    min-width: 280px;
+   }
+   #graduates .graduates_list .graduates_item .graduates_item_img {
+      height: 160px;
+   }
+   #graduates .graduates_list .graduates_item .graduates_item_about {
+      font-size: 25px;
+    line-height: 20px;
+   }
+   .internal_page #registration {
+      padding: 48px 0 60px;
+   }
+   .internal_page #registration.registration_main .registration_list #registration_form input {
+      padding-bottom: 18px;
+   }
+   .internal_page #registration.registration_main .registration_list #registration_form .registration_form_item_leave {
+      margin-top: 28px;
+   }
+   .internal_page #registration .registration_list #registration_form {
+      padding: 46px 40px 43px 50px;
+   }
+   .internal_page #registration.registration_main .registration_list {
+      grid-gap: 30px;
+   }
+   .internal_page #registration.registration_main .registration_list .registration_questions .registration_questions_title {
+      margin-bottom: 0;
+    margin-top: -4px;
+   }
+   .internal_page #registration .registration_list .registration_questions_mobile .registration_questions_about {
+      margin-bottom: 30px;
+   }
+   #contacts {
+      padding: 71px 0 40px;
+   }
+   #contacts .contacts_mail {
+      margin-top: 36px;
+   }
+   #contacts .social_buttons {
+      margin-top: 37px;
+   }
+   .internal_page footer .footer_top {
+      padding: 100px 0 35px;
+      grid-gap: 23px;
+   }
+   .internal_page footer .footer_navigation {
+      grid-gap: 15px;
+   }
+   footer .footer_bottom .part1>.container {
+      padding-top: 30px;
+      padding-bottom: 30px;
    }
 }
 
@@ -3620,7 +4385,7 @@ width: 23px;
    .go_to_professium {
       margin-top: 28px;
    }
-   .go_to_professium, #curriculum .curriculum_list .curriculum_item_join, #saving .saving_container .saving_list .saving_item .go-to-professium, #any_questions .consult_me_btn, #registration .registration_list #registration_form .registration_form_item_leave,#curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely, #suitable_program .consult_me_btn {
+   .go_to_professium, #curriculum .curriculum_list .curriculum_item_join, #saving .saving_container .saving_list .saving_item .go-to-professium, #any_questions .consult_me_btn, #registration .registration_list #registration_form .registration_form_item_leave,#curriculum .curriculum_list .curriculum_item .curriculum_item_description .curriculum_item_description_text .pass_separetely, #suitable_program .consult_me_btn, .internal_page #access_library .access_library_item .look_now, #professiums_main .professiums_main_more, .internal_page #access_library .access_library_item .buy_journal, #courses .courses_more, #change_education .change_education_btn, .internal_page #registration.registration_main .registration_list #registration_form .registration_form_item_leave, .internal_page #registration.registration_main .registration_list #registration_form .registration_form_item_leave {
       width: 100%;
       max-width: 100%;
    }
@@ -4069,6 +4834,138 @@ width: 23px;
    }
    .internal_page footer .footer_navigation {
       grid-gap: 20px;
+   }
+   #faculty .faculty_content .faculty_title {
+      margin-left: 0;
+    font-size: 38px;
+    margin-top: -35px;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-child(2n+2) {
+      border-right: 0;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-child(n+1) {
+      border-right: 1px solid $black_color;
+   }
+   #faculty .faculty_list .faculty_list_item:nth-last-child(-n+2) {
+      border-bottom: 0;
+   }
+   #faculty .faculty_list .faculty_list_item:last-child {
+      border-bottom: 1px solid $black_color;
+   }
+   #professiums_main {
+      margin: 53px 0;
+   }
+   #professiums_main .professiums_list {
+      margin: 36px 0 31px;
+   }
+   .internal_page #access_library {
+      padding: 8px 0 48px;
+   }
+   .internal_page #access_library .access_library_list .access_library_item {
+      padding: 97px 21px 44px;
+   }
+   .internal_page #access_library .access_library_list .access_library_item.item2 {
+      padding: 34px 20px 40px;
+   }
+   #access_library .access_library_list .item2 img {
+      width: 190px;
+    height: 100px;
+    margin-bottom: 80px;
+   }
+   #courses .courses_title {
+      font-size: 50px;
+    line-height: 38.5px;
+   }
+   #courses_list .courses_list_item .courses_item_title {
+      font-size: 30px;
+      line-height: 27px;
+   }
+   #courses #courses_list {
+      margin: 40px 0 30px;
+   }
+   #courses_list .courses_list_item {
+      height: 280px;
+   }
+   #courses_list .courses_list_item .courses_item_bottom p {
+      font-size: 16px;
+      line-height: 120%;
+   }
+   #courses_list .courses_list_item .courses_item_time {
+      max-width: 152px;
+    min-height: 47px;
+    margin-bottom: 15px;
+   }
+   #courses_list .courses_list_item .courses_item_time .months::before {
+      transform: rotate(
+135deg
+) translate(31px,-2px);
+width: 22px;
+   }
+   .internal_page #learning {
+      padding: 53px 0 53px;
+   }
+   .internal_page #learning .learning_list {
+      margin-top: 38px;
+   }
+   .internal_page #learning .learning_list .learning_list_item .learning_item_title {
+      margin: 11px 0;
+   }
+   .internal_page #learning .learning_list {
+      grid-gap: 24px;
+   }
+   #graduates {
+      padding: 53px 0 11px;
+   }
+   #graduates .graduates_list {
+      margin-top: 36px;
+   }
+   .internal_page #registration {
+      padding: 54px 0 60px;
+   }
+   .internal_page #registration .registration_list {
+      margin-top: 37px;
+   }
+   .internal_page #registration .registration_list #registration_form {
+      padding: 38px 21px 43px 21px;
+   }
+   .internal_page #registration.registration_main .registration_list .registration_form_item {
+      margin-bottom: 29px;
+   }
+   .internal_page #registration.registration_main .registration_list #registration_form input {
+      padding-bottom: 16px;
+   }
+   .internal_page #registration.registration_main .registration_list #registration_form .registration_form_item_leave {
+      margin-top: 32px;
+   }
+   .internal_page #registration.registration_main .registration_list {
+      grid-gap: 28px;
+   }
+   .internal_page #registration .registration_list .registration_questions_mobile .registration_questions_about {
+      margin-bottom: 25px;
+   }
+   #professiums_main .professiums_list .professiums_item {
+      padding: 27px 21px 28px;
+   }
+   #professiums_main .professiums_list .professiums_item .professiums_item_title {
+      font-size: 30px;
+    line-height: 27px;
+   }
+   #professiums_main .professiums_list .professiums_item .professiums_item_footer {
+      max-width: 157px;
+    min-height: 47px;
+   }
+   #professiums_main .professiums_list .professiums_item .professiums_item_footer p, #professiums_main .professiums_list .professiums_item .professiums_item_level {
+      font-size: 16px;
+      line-height: 20px;
+   }
+   #professiums_main .professiums_list .professiums_item .professiums_item_footer .months::before {
+      width: 15px;
+      transform: rotate(
+         136deg
+         ) translate(30px,-5px);
+   }
+   #courses_list .courses_list_item {
+      padding: 15px 20px 22px;
    }
 }
 
