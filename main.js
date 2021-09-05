@@ -4,6 +4,7 @@ $(document).ready(function () {
 
    $('.burger').click(function () {
       $(this).toggleClass('active');
+      $('.mobile_menu').toggleClass('active');
    })
 
    //Burger
@@ -49,7 +50,11 @@ $(document).ready(function () {
 
    //Faculty and filter modals
 
-})
+   $('.choose_faculty, .faculty_menu, .faculty_menu:after').hover(function () {
+      $('.faculty_menu').toggleClass('active');
+   });
+
+});
 
 
 
